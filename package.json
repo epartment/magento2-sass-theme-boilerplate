@@ -1,0 +1,18 @@
+{
+  "author": "Epartment Ecommerce",
+  "description": "Magento 2 Boilerplate Theme with focus on ease-of-use and quick results",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "license": "OSL",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "jquery": "^3.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

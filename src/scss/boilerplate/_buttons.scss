@@ -1,0 +1,11 @@
+button {
+  background: $button-default-background-color;
+  border: $button-default-border;
+
+  &.action {
+    &.primary {
+      background: $button-primary-background-color;
+      border: $button-primary-border;
+    }
+  }
+}
