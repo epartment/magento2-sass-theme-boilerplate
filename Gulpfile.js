@@ -14,11 +14,11 @@ var npmDependencies = {
 
 gulp.task('watch', function() {
     browserSync.init({
-        proxy: 'www.m2-custom-theme.test'
+        proxy: 'magento2-boilerplate.test'
     });
 
-    gulp.watch("src/scss/**/*.scss", ['sass']);
-    gulp.watch(scripts, ['scripts', 'reload-js']);
+    gulp.watch("src/scss/**/*.scss", gulp.series('sass'));
+    gulp.watch(scripts, gulp.series('scripts', 'reload-js'));
     gulp.watch("**/*.phtml").on('change', browserSync.reload);
 });
 
@@ -48,8 +48,6 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', ['sass', 'script-deps', 'scripts'], function() {
+gulp.task('build', gulp.series('sass', 'script-deps', 'scripts'));
 
-});
-
-gulp.task('default', ['build']);
+gulp.task('default', gulp.series('build'));
