@@ -6,10 +6,92 @@
  */
 
 /**
+* Color pallete
+*/
+
+$primary-color: red;
+$secondary-color: orange;
+$alt-primary-color: blue;
+$alt-secondary-color: magenta;
+
+$color-primary-gradient-color: linear-gradient(red, orange);
+$color-secondary-gradient-color: linear-gradient(magenta, blue);
+
+/**
+* Fonts
+*/
+$font-default-font-family-primary: 'Montserrat';
+$font-default-font-family-secondary: 'Open Sans';
+$font-default-font-size: 12px;
+$font-default-font-weight: 400;
+$font-default-color: black;
+$font-default-heading-color: $primary-color;
+
+$font-family: $font-default-font-family-primary;
+$font-family-headings: $font-default-font-family-secondary;
+$font-family-headings-color: blue;
+$font-family-headings-weight: 600;
+
+$font-default-link-color: red;
+$font-default-link-hover-color: red;
+$font-default-link-decoration: underline;
+$font-default-link-font-weight: $font-default-font-weight;
+$font-default-link-hover-font-weight: 600;
+
+/**
  * Buttons
  */
-$button-default-background-color: blue;
-$button-default-border: 1px solid yellow;
+$button-default-background-color: $primary-color;
+$button-default-border: 1px solid $secondary-color;
+$button-default-border-radius: 2px;
+$button-default-color: $alt-primary-color;
+$button-default-font-size: 12px;
+$button-default-font-weight: 400;
+$button-default-transition: all .34s ease-in-out;
+$button-default-padding: 10px 20px;
+$button-default-text-transform: uppercase;
 
+/* Button default states */
+$button-default-hover-background-color: $alt-primary-color;
+$button-default-hover-border: 1px solid $alt-secondary-color;
+$button-default-hover-color: white;
+
+/* Button primary */
 $button-primary-background-color: $button-default-background-color;
 $button-primary-border: $button-default-border;
+$button-primary-color: $font-default-color;
+$button-primary-font-weight: 600;
+$button-primary-font-size: $button-default-font-size;
+$button-primary-transition: $button-default-transition;
+$button-primary-padding: $button-default-padding;
+$button-primary-text-transform: $button-default-text-transform;
+
+/* Button primary hover states */
+$button-primary-hover-background-color: $button-default-hover-background-color;
+$button-primary-hover-border: $button-default-hover-border;
+$button-primary-hover-color: $button-default-hover-color;
+
+/* Button secondary */
+$button-secondary-background-color: white;
+$button-secondary-border: 1px solid blue;
+$button-secondary-font-size: $button-default-font-size;
+$button-secondary-padding: 20px;
+$button-secondary-transition: $button-default-transition;
+$button-secondary-color: $alt-secondary-color;
+$button-secondary-text-transform: $button-default-text-transform;
+
+/* Button secondary hover states */
+$button-secondary-hover-background-color: black;
+$button-secondary-hover-border: red;
+$button-secondary-hover-color: red;
+
+/* Inputs & Forms */
+$input-default-padding: 15px 15px;
+$input-default-height: 40px;
+$input-default-line-height: 35px;
+$input-default-font-size: $font-default-font-size;
+$input-default-border: 1px solid #000;
+$input-default-border-radius: 15px;
+$input-default-color: #2e2e2e;
+$input-default-font-weight: $font-default-font-weight;
+

@@ -8,11 +8,42 @@
 button {
   background: $button-default-background-color;
   border: $button-default-border;
+  border-radius: $button-default-border-radius;
+  transition: $button-default-transition;
+  color: $button-default-color;
 
   &.action {
+    &:hover {
+      background: $button-default-hover-background-color;
+      border: $button-default-hover-border;
+    }
     &.primary {
       background: $button-primary-background-color;
       border: $button-primary-border;
+      color: $button-primary-color;
+      padding: $button-primary-padding;
+      font-size: $button-primary-font-size;
+      text-transform: $button-primary-text-transform;
+
+      &:hover {
+        background: $button-primary-hover-background-color;
+        border: $button-primary-hover-border;
+        color: $button-primary-hover-color;
+      }
+    }
+
+    &.secondary {
+      background: $button-secondary-background-color;
+      border: $button-secondary-border;
+      color: $button-secondary-color;
+      font-size: $button-secondary-font-size;
+
+      &:hover {
+        background: $button-secondary-hover-background-color;
+        border: $button-secondary-hover-border;
+        color: $button-secondary-hover-color;
+      }
     }
   }
 }
+

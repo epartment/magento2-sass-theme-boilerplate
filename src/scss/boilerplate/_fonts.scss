@@ -1,0 +1,51 @@
+html, body {
+  font-family: $font-family;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-headings;
+    color: $font-family-headings-color;
+    font-weight: $font-family-headings-weight;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: $font-default-font-size;
+    font-weight: $font-default-font-weight;
+    color: $font-default-color;
+  }
+
+  a {
+    font-size: $font-default-font-size;
+    font-weight: $font-default-link-font-weight;
+    color: $font-default-link-color;
+    text-decoration: $font-default-link-decoration;
+
+    &:hover {
+      font-weight: $font-default-link-hover-font-weight;
+      color: $font-default-link-hover-color;
+    }
+  }
+}

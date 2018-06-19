@@ -1,0 +1,10 @@
+input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"], select {
+  border: $input-default-border;
+  border-radius: $input-default-border-radius;
+  padding: $input-default-padding;
+  line-height: $input-default-line-height;
+  font-size: $input-default-font-size;
+  font-weight: $input-default-font-weight;
+  color: $input-default-color;
+  height: $input-default-height;
+}
