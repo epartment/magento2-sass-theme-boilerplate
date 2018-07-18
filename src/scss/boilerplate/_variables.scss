@@ -130,4 +130,48 @@ $input-textarea-default-resize: vertical;
 /* Checkbox / Radio */
 $input-choice-default-width: auto;
 
+/*
+ * Fieldset / Fields
+ */
 
+/* Fieldset */
+$form-fieldset-border: 0;
+$form-fieldset-margin: 0;
+$form-fieldset-padding: 0;
+$form-fieldset-legend-color: $font-default-color;
+$form-fieldset-legend-font-size: 24px;
+$form-fieldset-legend-font-family: $font-default-font-family-secondary;
+$form-fieldset-legend-font-weight: 600;
+$form-fieldset-legend-font-style: normal;
+$form-fieldset-legend-line-height: 1.2;
+$form-fieldset-legend-margin: 20px 0;
+$form-fieldset-legend-padding: 0;
+$form-fieldset-legend-width: inherit;
+
+/* Field */
+
+$form-fieldset-field-type: block;
+$form-fieldset-field-margin: 0 0 20px;
+$form-fieldset-field-box-sizing: border-box;
+
+$form-fieldset-field-choice-before-width: auto;
+$form-fieldset-field-choice-before-padding: 0;
+$form-fieldset-field-choice-before-height: inherit;
+$form-fieldset-field-choice-before-float: none;
+
+
+/* Label */
+$form-fieldset-field-label-padding: 6px 15px 0 0;
+$form-fieldset-field-label-text-align: left;
+$form-fieldset-field-label-width: auto;
+$form-fieldset-field-label-float: none;
+$form-fieldset-field-label-font-weight: 600;
+
+$form-fieldset-field-choice-label-margin: 0 0 0 5px;
+
+/* Control */
+$form-fieldset-field-control-width: auto;
+$form-fieldset-field-control-float: none;
+
+/* Action toolbar */
+$form-action-toolbar-margin: 0;

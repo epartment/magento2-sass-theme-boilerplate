@@ -47,6 +47,72 @@ input[type="checkbox"] {
 }
 
 /****
+** Form
+****/
+
+.form {
+
+  /****
+  ** Fieldset
+  ****/
+
+  .fieldset {
+    border: $form-fieldset-border;
+    margin: $form-fieldset-margin;
+    padding: $form-fieldset-padding;
+
+    > legend.legend {
+      color: $form-fieldset-legend-color;
+      font-size: $form-fieldset-legend-font-size;
+      font-family: $form-fieldset-legend-font-family;
+      font-weight: $form-fieldset-legend-font-weight;
+      font-style: $form-fieldset-legend-font-style;
+      line-height: $form-fieldset-legend-line-height;
+      margin: $form-fieldset-legend-margin;
+      padding: $form-fieldset-legend-padding;
+      width: $form-fieldset-legend-width;
+    }
+
+    > div.field {
+      margin: $form-fieldset-field-margin;
+      box-sizing: $form-fieldset-field-box-sizing;
+
+      &:not(.choice) {
+        > label.label {
+          padding: $form-fieldset-field-label-padding;
+          text-align: $form-fieldset-field-label-text-align;
+          width: $form-fieldset-field-label-width;
+          float: $form-fieldset-field-label-float;
+          font-weight: $form-fieldset-field-label-font-weight;
+        }
+        > div.control {
+          width: $form-fieldset-field-control-width;
+          float: $form-fieldset-field-control-float;
+        }
+      }
+
+      &.choice {
+        &:before {
+          width: $form-fieldset-field-choice-before-width;
+          padding: $form-fieldset-field-choice-before-padding;
+          height: $form-fieldset-field-choice-before-height;
+          float: $form-fieldset-field-choice-before-float;
+        }
+
+        label.label {
+          margin: $form-fieldset-field-choice-label-margin;
+        }
+      }
+    }
+  }
+
+  div.actions-toolbar {
+    margin-left: $form-action-toolbar-margin !important;
+  }
+}
+
+
+/****
 ** Sidebar input
 ****/
 
