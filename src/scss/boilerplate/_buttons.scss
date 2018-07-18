@@ -30,6 +30,15 @@ button {
         border: $button-primary-hover-border;
         color: $button-primary-hover-color;
       }
+
+      &.tocart {
+        font-size: $button-primary-font-size;
+      }
+
+      &#product-addtocart-button {
+        font-size: $button-primary-font-size;
+      }
+
     }
 
     &.secondary {
@@ -46,4 +55,5 @@ button {
     }
   }
 }
+
 

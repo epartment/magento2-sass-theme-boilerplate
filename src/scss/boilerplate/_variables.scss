@@ -24,6 +24,7 @@ $font-default-font-family-primary: 'Montserrat';
 $font-default-font-family-secondary: 'Open Sans';
 $font-default-font-size: 12px;
 $font-default-font-weight: 400;
+$font-default-font-line-height: 18px;
 $font-default-color: black;
 $font-default-heading-color: $primary-color;
 
@@ -31,6 +32,7 @@ $font-family: $font-default-font-family-primary;
 $font-family-headings: $font-default-font-family-secondary;
 $font-family-headings-color: blue;
 $font-family-headings-weight: 600;
+$font-family-heading-line-height: 1.2;
 
 $font-default-link-color: red;
 $font-default-link-hover-color: red;
@@ -103,7 +105,7 @@ $input-default-font-size: $font-default-font-size;
 $input-default-color: black;
 $input-default-font-family: $font-default-font-family-secondary;
 $input-default-font-weight: $font-default-font-weight;
-$input-default-font-style: italic;
+$input-default-font-style: normal;
 $input-default-line-height: 36px;
 
 /* Placeholder */
@@ -174,4 +176,7 @@ $form-fieldset-field-control-width: auto;
 $form-fieldset-field-control-float: none;
 
 /* Action toolbar */
-$form-action-toolbar-margin: 0;
+$form-action-toolbar-margin: 20px 0;
+$form-action-toolbar-padding: 0;
+
+
