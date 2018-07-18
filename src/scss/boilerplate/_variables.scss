@@ -5,9 +5,9 @@
  * License: MIT
  */
 
-/**
-* Color pallete
-*/
+/*
+ * Color pallete
+ */
 
 $primary-color: red;
 $secondary-color: orange;
@@ -17,9 +17,9 @@ $alt-secondary-color: magenta;
 $color-primary-gradient-color: linear-gradient(red, orange);
 $color-secondary-gradient-color: linear-gradient(magenta, blue);
 
-/**
-* Fonts
-*/
+/*
+ * Fonts
+ */
 $font-default-font-family-primary: 'Montserrat';
 $font-default-font-family-secondary: 'Open Sans';
 $font-default-font-size: 12px;
@@ -38,7 +38,7 @@ $font-default-link-decoration: underline;
 $font-default-link-font-weight: $font-default-font-weight;
 $font-default-link-hover-font-weight: 600;
 
-/**
+/*
  * Buttons
  */
 $button-default-background-color: $primary-color;
@@ -85,13 +85,49 @@ $button-secondary-hover-background-color: black;
 $button-secondary-hover-border: red;
 $button-secondary-hover-color: red;
 
-/* Inputs & Forms */
-$input-default-padding: 15px 15px;
-$input-default-height: 40px;
-$input-default-line-height: 35px;
+/*
+ * Inputs & Forms
+ */
+
+/* [input-text|select|textarea|input-radio|input-checkbox] */
+$input-default-background-color: white;
+$input-default-border-color: gray;
+$input-default-border: 1px solid $input-default-border-color;
+$input-default-border-radius: 3px;
+$input-default-height: 36px;
+$input-default-width: 100%;
+$input-default-margin: 0;
+$input-default-padding: 0 9px;
+$input-default-vertical-align: middle;
 $input-default-font-size: $font-default-font-size;
-$input-default-border: 1px solid #000;
-$input-default-border-radius: 15px;
-$input-default-color: #2e2e2e;
+$input-default-color: black;
+$input-default-font-family: $font-default-font-family-secondary;
 $input-default-font-weight: $font-default-font-weight;
+$input-default-font-style: italic;
+$input-default-line-height: 36px;
+
+/* Placeholder */
+$input-default-placeholder-color: #84929F;
+$input-default-placeholder-font-style: $input-default-font-style;
+
+/* Disabled state */
+$input-default-disabled-background-color: $input-default-background-color;
+$input-default-disabled-border: $input-default-border;
+$input-default-disabled-opacity: .2;
+$input-default-disabled-color: $input-default-color;
+$input-default-disabled-font-style: $input-default-font-style;
+
+/* Focus state */
+$input-default-focus-background-color: $input-default-background-color;
+$input-default-focus-border: $input-default-border;
+$input-default-focus-color: $input-default-color;
+$input-default-focus-font-style: $input-default-font-style;
+
+/* Textarea */
+$input-textarea-default-height: auto;
+$input-textarea-default-resize: vertical;
+
+/* Checkbox / Radio */
+$input-choice-default-width: auto;
+
 
