@@ -1,0 +1,86 @@
+.swatch-option {
+  background: $swatch-default-background;
+  border: $swatch-default-border;
+  color: $swatch-default-color;
+  font-size: $swatch-default-font-size;
+  font-weight: $swatch-default-font-weight;
+  line-height: $swatch-default-line-height;
+  text-align: $swatch-default-text-align;
+  margin: $swatch-default-margin;
+  padding: $swatch-default-padding;
+  height: $swatch-default-height;
+  width: $swatch-default-width;
+  min-width: $swatch-default-min-width;
+  max-width: $swatch-default-max-width;
+  overflow: $swatch-default-overflow;
+
+  &:hover {
+    border: $swatch-default-hover-border;
+    outline: $swatch-default-hover-outline;
+    color: $swatch-default-hover-color;
+  }
+
+  &.text {
+    background: $swatch-option-text-background;
+    border: $swatch-option-text-border;
+    color: $swatch-option-text-color;
+    padding: $swatch-option-text-padding;
+    min-width: $swatch-option-text-min-width;
+    margin: $swatch-option-text-margin;
+
+    &:hover {
+      border: $swatch-option-text-hover-border;
+      outline: $swatch-option-text-hover-outline;
+      color: $swatch-option-text-hover-color;
+    }
+  }
+
+  &.color {
+    border: $swatch-option-color-border;
+    padding: $swatch-option-color-padding;
+    min-width: $swatch-option-color-min-width;
+    margin: $swatch-option-color-margin;
+  }
+}
+
+.swatch-attribute {
+  &.size {
+    .swatch-option {
+      background: $swatch-default-background;
+      border: $swatch-default-border;
+      color: $swatch-default-color;
+      font-size: $swatch-default-font-size;
+      font-weight: $swatch-default-font-weight;
+      line-height: $swatch-default-line-height;
+      text-align: $swatch-default-text-align;
+      margin: $swatch-default-margin;
+      padding: $swatch-default-padding;
+      height: $swatch-default-height;
+      width: $swatch-default-width;
+      min-width: $swatch-default-min-width;
+      max-width: $swatch-default-max-width;
+      overflow: $swatch-default-overflow;
+
+      &:hover {
+        border: $swatch-default-hover-border;
+        outline: $swatch-default-hover-outline;
+        color: $swatch-default-hover-color;
+      }
+
+      &.text {
+        background: $swatch-option-text-background;
+        border: $swatch-option-text-border;
+        color: $swatch-option-text-color;
+        padding: $swatch-option-text-padding;
+        min-width: $swatch-option-text-min-width;
+        margin: $swatch-option-text-margin;
+
+        &:hover {
+          border: $swatch-option-text-hover-border;
+          outline: $swatch-option-text-hover-outline;
+          color: $swatch-option-text-hover-color;
+        }
+      }
+    }
+  }
+}

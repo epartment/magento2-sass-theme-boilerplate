@@ -88,6 +88,48 @@ $button-secondary-hover-border: red;
 $button-secondary-hover-color: red;
 
 /*
+ * Swatches
+ */
+$swatch-default-background: black;
+$swatch-default-border: 1px solid rgb(218, 218, 218);
+$swatch-default-color: white;
+$swatch-default-font-size: $font-default-font-size;
+$swatch-default-font-weight: $font-default-font-weight;
+$swatch-default-line-height: $font-default-font-line-height;
+$swatch-default-text-align: center;
+$swatch-default-margin: 0 10px 5px;
+$swatch-default-padding: 1px 2px;
+$swatch-default-height: 20px;
+$swatch-default-width: 30px;
+$swatch-default-min-width: 30px;
+$swatch-default-max-width: 90px;
+$swatch-default-overflow: hidden;
+
+$swatch-default-hover-border: 1px solid white;
+$swatch-default-hover-outline: 1px solid #999;
+$swatch-default-hover-color: #999;
+
+$swatch-option-text-background: $swatch-default-background;
+$swatch-option-text-border: $swatch-default-border;
+$swatch-option-text-color: $swatch-default-color;
+$swatch-option-text-padding: 4px 8px;
+$swatch-option-text-min-width: 22px;
+$swatch-option-text-margin: 0px 7px 5px;
+$swatch-option-text-outline: $swatch-default-hover-outline;
+
+$swatch-option-text-hover-border: $swatch-default-hover-border;
+$swatch-option-text-hover-outline: $swatch-default-hover-outline;
+$swatch-option-text-hover-color: $swatch-default-hover-color;
+
+$swatch-option-color-border: $swatch-default-border;
+$swatch-option-color-padding: $swatch-default-padding;
+$swatch-option-color-margin: $swatch-default-margin;
+$swatch-option-color-height: $swatch-default-height;
+$swatch-option-color-width: $swatch-default-width;
+$swatch-option-color-hover-outline: $swatch-default-hover-outline;
+$swatch-option-color-min-width: $swatch-default-min-width;
+
+/*
  * Inputs & Forms
  */
 
@@ -178,5 +220,30 @@ $form-fieldset-field-control-float: none;
 /* Action toolbar */
 $form-action-toolbar-margin: 20px 0;
 $form-action-toolbar-padding: 0;
+
+/*
+ * Tabs
+ */
+
+/* Detail tabs */
+
+$detail-tab-title-background: black;
+$detail-tab-title-border-color: gray;
+$detail-tab-title-color: white;
+$detail-tab-title-font-weight: 300;
+$detail-tab-title-text-decoration: none;
+$detail-tab-title-padding: 5px 25px;
+$detail-tab-title-height: 25px;
+$detail-tab-title-font-size: 1.5rem;
+
+$detail-tab-title-hover-background: orange;
+$detail-tab-title-hover-color: white;
+$detail-tab-title-hover-border: red;
+
+$detail-tab-title-active-background: orange;
+$detail-tab-title-active-color: white;
+$detail-tab-title-active-border: red;
+
+$detail-tab-content-background: black;
 
 
