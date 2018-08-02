@@ -1,30 +1,46 @@
 html, body {
   font-family: $font-family;
+  color: $font-default-color;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: $font-family-headings;
-    color: $font-family-headings-color;
-    font-weight: $font-family-headings-weight;
+    font-family: $font-family-heading;
+    color: $font-family-heading-color;
+    font-weight: $font-family-heading-font-weight;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: $font-family-heading-h1-font-size;
+    font-weight: $font-family-heading-h1-font-weight;
+    line-height: $font-family-heading-h1-line-height;
+    margin: $font-family-heading-h1-margin;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: $font-family-heading-h2-font-size;
+    font-weight: $font-family-heading-h2-font-weight;
+    line-height: $font-family-heading-h2-line-height;
+    margin: $font-family-heading-h2-margin;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: $font-family-heading-h3-font-size;
+    font-weight: $font-family-heading-h3-font-weight;
+    line-height: $font-family-heading-h3-line-height;
+    margin: $font-family-heading-h3-margin;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: $font-family-heading-h4-font-size;
+    font-weight: $font-family-heading-h4-font-weight;
+    line-height: $font-family-heading-h4-line-height;
+    margin: $font-family-heading-h4-margin;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: $font-family-heading-h5-font-size;
+    font-weight: $font-family-heading-h5-font-weight;
+    line-height: $font-family-heading-h5-line-height;
+    margin: $font-family-heading-h5-margin;
   }
 
   h6 {
@@ -42,11 +58,12 @@ html, body {
     font-size: $font-default-font-size;
     font-weight: $font-default-link-font-weight;
     color: $font-default-link-color;
-    text-decoration: $font-default-link-decoration;
+    text-decoration: $font-default-link-text-decoration;
 
     &:hover {
       font-weight: $font-default-link-hover-font-weight;
       color: $font-default-link-hover-color;
+      text-decoration: $font-default-link-hover-text-decoration;
     }
   }
 }

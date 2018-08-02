@@ -1,0 +1,30 @@
+.nav-sections {
+  background: $menu-bar-background;
+  margin: $menu-bar-margin;
+
+  .navigation {
+    background: $menu-bar-background;
+
+    .ui-menu-item.level-top {
+      a {
+        font-size: $menu-bar-menu-item-font-size;
+        font-weight: $menu-bar-menu-item-font-weight;
+        color: $menu-bar-menu-item-color;
+
+        &:hover {
+          color: $menu-bar-menu-item-hover-color;
+        }
+      }
+
+      &.has-active {
+        > a {
+          border-top: $menu-bar-menu-item-hover-border-top;
+          border-bottom: $menu-bar-menu-item-hover-border-bottom;
+          border-left: $menu-bar-menu-item-hover-border-left;
+          border-right: $menu-bar-menu-item-hover-border-right;
+          color: $menu-bar-menu-item-hover-color;
+        }
+      }
+    }
+  }
+}

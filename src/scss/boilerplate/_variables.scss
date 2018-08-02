@@ -6,220 +6,318 @@
  */
 
 /*
- * Color pallete
+ * Color palette
  */
 
-$primary-color: red;
-$secondary-color: orange;
-$alt-primary-color: blue;
-$alt-secondary-color: magenta;
+$color-boilerplate-primary: #333 !default;
+$color-boilerplate-secondary: orange !default;
+$color-boilerplate-black: $color-boilerplate-primary !default;
+$color-boilerplate-blue: #1979c3 !default;
+$color-boilerplate-orange: #ff5501 !default;
+$color-boilerplate-light-gray: #f2f2f2 !default;
+$color-boilerplate-lighter-gray: rgb(218, 218, 218) !default;
+$color-boilerplate-gray: rgb(148, 148, 148) !default;
 
-$color-primary-gradient-color: linear-gradient(red, orange);
-$color-secondary-gradient-color: linear-gradient(magenta, blue);
+$color-primary-gradient-color: linear-gradient(red, orange) !default;
+$color-secondary-gradient-color: linear-gradient(magenta, blue) !default;
 
 /*
  * Fonts
  */
-$font-default-font-family-primary: 'Montserrat';
-$font-default-font-family-secondary: 'Open Sans';
-$font-default-font-size: 12px;
-$font-default-font-weight: 400;
-$font-default-font-line-height: 18px;
-$font-default-color: black;
-$font-default-heading-color: $primary-color;
+$font-default-font-family-primary: 'Open Sans' !default;
+$font-default-font-family-secondary: 'Open Sans' !default;
+$font-default-font-size: 1.4rem !default;
+$font-default-font-weight: 400 !default;
+$font-default-font-line-height: 18px !default;
+$font-default-color: $color-boilerplate-black !default;
+$font-default-heading-color: $color-boilerplate-black !default;
 
-$font-family: $font-default-font-family-primary;
-$font-family-headings: $font-default-font-family-secondary;
-$font-family-headings-color: blue;
-$font-family-headings-weight: 600;
-$font-family-heading-line-height: 1.2;
+/* Body */
+$font-family: $font-default-font-family-primary !default;
 
-$font-default-link-color: red;
-$font-default-link-hover-color: red;
-$font-default-link-decoration: underline;
-$font-default-link-font-weight: $font-default-font-weight;
-$font-default-link-hover-font-weight: 600;
+/* Heading */
+$font-family-heading: $font-default-font-family-secondary !default;
+$font-family-heading-color: $color-boilerplate-black !default;
+$font-family-heading-font-weight: 300 !default;
+$font-family-heading-line-height: 1.1 !default;
+
+/* H1 */
+$font-family-heading-h1-font-size: 40px !default;
+$font-family-heading-h1-font-weight: $font-family-heading-font-weight !default;
+$font-family-heading-h1-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h1-margin: 0rem 0 40px 0 !default;
+
+/* H2 */
+$font-family-heading-h2-font-size: 2.6rem !default;
+$font-family-heading-h2-font-weight: $font-family-heading-font-weight !default;
+$font-family-heading-h2-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h2-margin: 2.5rem 0 2rem 0 !default;
+
+/* H3 */
+$font-family-heading-h3-font-size: 1.8rem !default;
+$font-family-heading-h3-font-weight: $font-family-heading-font-weight !default;
+$font-family-heading-h3-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h3-margin: 1.5rem 0 1rem 0 !default;
+
+/* H4 */
+$font-family-heading-h4-font-size: 1.4rem !default;
+$font-family-heading-h4-font-weight: 700 !default;
+$font-family-heading-h4-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h4-margin: 2rem 0 2rem 0 !default;
+
+/* H5 */
+$font-family-heading-h5-font-size: 1.2rem !default;
+$font-family-heading-h5-font-weight: 700 !default;
+$font-family-heading-h5-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h5-margin: 2rem 0 2rem 0 !default;
+
+/* H6 */
+$font-family-heading-h6-font-size: 1rem !default;
+$font-family-heading-h6-font-weight: 700 !default;
+$font-family-heading-h6-line-height: $font-family-heading-line-height !default;
+$font-family-heading-h6-margin: 2rem 0 2rem 0 !default;
+
+$font-default-link-color: $color-boilerplate-blue !default;
+$font-default-link-text-decoration: none !default;
+$font-default-link-font-weight: $font-default-font-weight !default;
+$font-default-link-hover-color: $font-default-link-color !default;
+$font-default-link-hover-font-weight: $font-default-link-font-weight !default;
+$font-default-link-hover-text-decoration: underline !default;
+
+/* Standard title classes */
+
 
 /*
  * Buttons
  */
-$button-default-background-color: $primary-color;
-$button-default-border: 1px solid $secondary-color;
-$button-default-border-radius: 2px;
-$button-default-color: $alt-primary-color;
-$button-default-font-size: 12px;
-$button-default-font-weight: 400;
-$button-default-transition: all .34s ease-in-out;
-$button-default-padding: 10px 20px;
-$button-default-text-transform: uppercase;
+$button-default-background-color: $color-boilerplate-blue !default;
+$button-default-border: 1px solid $color-boilerplate-blue !default;
+$button-default-border-radius: 3px !default;
+$button-default-color: $color-boilerplate-light-gray !default;
+$button-default-font-size: 1.4rem !default;
+$button-default-font-weight: 400 !default;
+$button-default-transition: all .34s ease-in-out !default;
+$button-default-padding: 7px 15px !default;
+$button-default-text-transform: none !default;
 
 /* Button default states */
-$button-default-hover-background-color: $alt-primary-color;
-$button-default-hover-border: 1px solid $alt-secondary-color;
-$button-default-hover-color: white;
+$button-default-hover-background-color: $color-boilerplate-orange !default;
+$button-default-hover-border: 1px solid $color-boilerplate-blue !default;
+$button-default-hover-color: white !default;
 
 /* Button primary */
-$button-primary-background-color: $button-default-background-color;
-$button-primary-border: $button-default-border;
-$button-primary-color: $font-default-color;
-$button-primary-font-weight: 600;
-$button-primary-font-size: $button-default-font-size;
-$button-primary-transition: $button-default-transition;
-$button-primary-padding: $button-default-padding;
-$button-primary-text-transform: $button-default-text-transform;
+$button-primary-background-color: $button-default-background-color !default;
+$button-primary-border: $button-default-border !default;
+$button-primary-color: $button-default-color !default;
+$button-primary-font-weight: 600 !default;
+$button-primary-font-size: $button-default-font-size !default;
+$button-primary-transition: $button-default-transition !default;
+$button-primary-padding: $button-default-padding !default;
+$button-primary-text-transform: $button-default-text-transform !default;
 
 /* Button primary hover states */
-$button-primary-hover-background-color: $button-default-hover-background-color;
-$button-primary-hover-border: $button-default-hover-border;
-$button-primary-hover-color: $button-default-hover-color;
+$button-primary-hover-background-color: $button-default-hover-background-color !default;
+$button-primary-hover-border: $button-default-hover-border !default;
+$button-primary-hover-color: $button-default-hover-color !default;
 
 /* Button secondary */
-$button-secondary-background-color: white;
-$button-secondary-border: 1px solid blue;
-$button-secondary-font-size: $button-default-font-size;
-$button-secondary-padding: 20px;
-$button-secondary-transition: $button-default-transition;
-$button-secondary-color: $alt-secondary-color;
-$button-secondary-text-transform: $button-default-text-transform;
+$button-secondary-background-color: white !default;
+$button-secondary-border: 1px solid blue !default;
+$button-secondary-font-size: $button-default-font-size !default;
+$button-secondary-padding: 20px !default;
+$button-secondary-transition: $button-default-transition !default;
+$button-secondary-color: $color-boilerplate-blue !default;
+$button-secondary-text-transform: $button-default-text-transform !default;
 
 /* Button secondary hover states */
-$button-secondary-hover-background-color: black;
-$button-secondary-hover-border: red;
-$button-secondary-hover-color: red;
+$button-secondary-hover-background-color: black !default;
+$button-secondary-hover-border: red !default;
+$button-secondary-hover-color: red !default;
 
 /*
  * Swatches
  */
-$swatch-default-background: black;
-$swatch-default-border: 1px solid rgb(218, 218, 218);
-$swatch-default-color: white;
-$swatch-default-font-size: $font-default-font-size;
-$swatch-default-font-weight: $font-default-font-weight;
-$swatch-default-line-height: $font-default-font-line-height;
-$swatch-default-text-align: center;
-$swatch-default-margin: 0 10px 5px;
-$swatch-default-padding: 1px 2px;
-$swatch-default-height: 20px;
-$swatch-default-width: 30px;
-$swatch-default-min-width: 30px;
-$swatch-default-max-width: 90px;
-$swatch-default-overflow: hidden;
+$swatch-default-background: $color-boilerplate-light-gray !default;
+$swatch-default-border: 1px solid $color-boilerplate-lighter-gray !default;
+$swatch-default-color: $color-boilerplate-gray !default;
+$swatch-default-font-size: $font-default-font-size !default;
+$swatch-default-font-weight: 700 !default;
+$swatch-default-line-height: 20px !default;
+$swatch-default-text-align: center !default;
+$swatch-default-margin: 0 10px 5px 0 !default;
+$swatch-default-padding: 1px 2px !default;
+$swatch-default-height: 20px !default;
+$swatch-default-width: 30px !default;
+$swatch-default-min-width: 30px !default;
+$swatch-default-max-width: 90px !default;
+$swatch-default-overflow: hidden !default;
 
-$swatch-default-hover-border: 1px solid white;
-$swatch-default-hover-outline: 1px solid #999;
-$swatch-default-hover-color: #999;
+$swatch-default-hover-border: 1px solid white !default;
+$swatch-default-hover-outline: 1px solid #999 !default;
+$swatch-default-hover-color: #999 !default;
 
-$swatch-option-text-background: $swatch-default-background;
-$swatch-option-text-border: $swatch-default-border;
-$swatch-option-text-color: $swatch-default-color;
-$swatch-option-text-padding: 4px 8px;
-$swatch-option-text-min-width: 22px;
-$swatch-option-text-margin: 0px 7px 5px;
-$swatch-option-text-outline: $swatch-default-hover-outline;
+$swatch-option-text-background: $swatch-default-background !default;
+$swatch-option-text-border: $swatch-default-border !default;
+$swatch-option-text-color: $swatch-default-color !default;
+$swatch-option-text-font-size: 12px !default;
+$swatch-option-text-padding: 4px 8px !default;
+$swatch-option-text-min-width: 22px !default;
+$swatch-option-text-margin: 0px 7px 5px 0 !default;
+$swatch-option-text-outline: $swatch-default-hover-outline !default;
 
-$swatch-option-text-hover-border: $swatch-default-hover-border;
-$swatch-option-text-hover-outline: $swatch-default-hover-outline;
-$swatch-option-text-hover-color: $swatch-default-hover-color;
+$swatch-option-text-hover-border: $swatch-default-hover-border !default;
+$swatch-option-text-hover-outline: $swatch-default-hover-outline !default;
+$swatch-option-text-hover-color: $swatch-default-hover-color !default;
 
-$swatch-option-color-border: $swatch-default-border;
-$swatch-option-color-padding: $swatch-default-padding;
-$swatch-option-color-margin: $swatch-default-margin;
-$swatch-option-color-height: $swatch-default-height;
-$swatch-option-color-width: $swatch-default-width;
-$swatch-option-color-hover-outline: $swatch-default-hover-outline;
-$swatch-option-color-min-width: $swatch-default-min-width;
+$swatch-option-color-border: $swatch-default-border !default;
+$swatch-option-color-padding: $swatch-default-padding !default;
+$swatch-option-color-margin: $swatch-default-margin !default;
+$swatch-option-color-height: $swatch-default-height !default;
+$swatch-option-color-width: $swatch-default-width !default;
+$swatch-option-color-hover-outline: $swatch-default-hover-outline !default;
+$swatch-option-color-min-width: $swatch-default-min-width !default;
 
 /*
  * Inputs & Forms
  */
 
 /* [input-text|select|textarea|input-radio|input-checkbox] */
-$input-default-background-color: white;
-$input-default-border-color: gray;
-$input-default-border: 1px solid $input-default-border-color;
-$input-default-border-radius: 3px;
-$input-default-height: 36px;
-$input-default-width: 100%;
-$input-default-margin: 0;
-$input-default-padding: 0 9px;
-$input-default-vertical-align: middle;
-$input-default-font-size: $font-default-font-size;
-$input-default-color: black;
-$input-default-font-family: $font-default-font-family-secondary;
-$input-default-font-weight: $font-default-font-weight;
-$input-default-font-style: normal;
-$input-default-line-height: 36px;
+$input-default-background-color: white !default;
+$input-default-border-color: $color-boilerplate-gray !default;
+$input-default-border: 1px solid $input-default-border-color !default;
+$input-default-border-radius: 3px !default;
+$input-default-height: 36px !default;
+$input-default-width: 100% !default;
+$input-default-margin: 0 !default;
+$input-default-padding: 5px 10px 4px !default;
+$input-default-vertical-align: middle !default;
+$input-default-font-size: $font-default-font-size !default;
+$input-default-color: black !default;
+$input-default-font-family: $font-default-font-family-secondary !default;
+$input-default-font-weight: $font-default-font-weight !default;
+$input-default-font-style: normal !default;
+$input-default-line-height: 36px !default;
 
 /* Placeholder */
-$input-default-placeholder-color: #84929F;
-$input-default-placeholder-font-style: $input-default-font-style;
+$input-default-placeholder-color: #84929F !default;
+$input-default-placeholder-font-style: $input-default-font-style !default;
 
 /* Disabled state */
-$input-default-disabled-background-color: $input-default-background-color;
-$input-default-disabled-border: $input-default-border;
-$input-default-disabled-opacity: .2;
-$input-default-disabled-color: $input-default-color;
-$input-default-disabled-font-style: $input-default-font-style;
+$input-default-disabled-background-color: $input-default-background-color !default;
+$input-default-disabled-border: $input-default-border !default;
+$input-default-disabled-opacity: .2 !default;
+$input-default-disabled-color: $input-default-color !default;
+$input-default-disabled-font-style: $input-default-font-style !default;
 
 /* Focus state */
-$input-default-focus-background-color: $input-default-background-color;
-$input-default-focus-border: $input-default-border;
-$input-default-focus-color: $input-default-color;
-$input-default-focus-font-style: $input-default-font-style;
+$input-default-focus-background-color: $input-default-background-color !default;
+$input-default-focus-border: $input-default-border !default;
+$input-default-focus-color: $input-default-color !default;
+$input-default-focus-font-style: $input-default-font-style !default;
 
 /* Textarea */
-$input-textarea-default-height: auto;
-$input-textarea-default-resize: vertical;
+$input-textarea-default-height: auto !default;
+$input-textarea-default-resize: vertical !default;
 
 /* Checkbox / Radio */
-$input-choice-default-width: auto;
+$input-choice-default-width: auto !default;
+
+/* Limiter */
+$input-limiter-background-color: white !default;
+$input-limiter-border-color: $color-boilerplate-gray !default;
+$input-limiter-border: 1px solid $color-boilerplate-gray !default;
+$input-limiter-border-radius: $input-default-border-radius !default;
+$input-limiter-height: 32px !default;
+$input-limiter-width: auto !default;
+$input-limiter-margin: 0 5px 0 7px !default;
+$input-limiter-padding: $input-default-padding !default;
+$input-limiter-vertical-align: $input-default-vertical-align !default;
+$input-limiter-font-size: $font-default-font-size !default;
+$input-limiter-color: $color-boilerplate-black !default;
+$input-limiter-font-family: $input-default-font-family !default;
+$input-limiter-font-weight: $input-default-font-weight !default;
+$input-limiter-font-style: $input-default-font-style !default;
+$input-limiter-line-height: 1.42 !default;
+
+/* Sorter */
+$input-sorter-background-color: white !default;
+$input-sorter-border-color: $color-boilerplate-gray !default;
+$input-sorter-border: 1px solid $color-boilerplate-gray !default;
+$input-sorter-border-radius: $input-default-border-radius !default;
+$input-sorter-height: 32px !default;
+$input-sorter-width: auto !default;
+$input-sorter-margin: 0 0 0 7px !default;
+$input-sorter-padding: $input-default-padding !default;
+$input-sorter-vertical-align: $input-default-vertical-align !default;
+$input-sorter-font-size: $font-default-font-size !default;
+$input-sorter-color: $color-boilerplate-black !default;
+$input-sorter-font-family: $input-default-font-family !default;
+$input-sorter-font-weight: $input-default-font-weight !default;
+$input-sorter-font-style: $input-default-font-style !default;
+$input-sorter-line-height: 1.42 !default;
+
+/*
+ * Menu bar
+ */
+
+$menu-bar-background: $color-boilerplate-light-gray !default;
+$menu-bar-margin: 0 0 25px !default;
+$menu-bar-menu-item-font-weight: 700 !default;
+$menu-bar-menu-item-font-size: $font-default-font-size !default;
+$menu-bar-menu-item-color: $color-boilerplate-gray !default;
+$menu-bar-menu-item-hover-color: $color-boilerplate-black !default;
+$menu-bar-menu-item-hover-default-border: 3px solid $color-boilerplate-orange !default;
+$menu-bar-menu-item-hover-border-top: none !default;
+$menu-bar-menu-item-hover-border-bottom: $menu-bar-menu-item-hover-default-border !default;
+$menu-bar-menu-item-hover-border-left: none !default;
+$menu-bar-menu-item-hover-border-right: none !default;
 
 /*
  * Fieldset / Fields
  */
 
 /* Fieldset */
-$form-fieldset-border: 0;
-$form-fieldset-margin: 0;
-$form-fieldset-padding: 0;
-$form-fieldset-legend-color: $font-default-color;
-$form-fieldset-legend-font-size: 24px;
-$form-fieldset-legend-font-family: $font-default-font-family-secondary;
-$form-fieldset-legend-font-weight: 600;
-$form-fieldset-legend-font-style: normal;
-$form-fieldset-legend-line-height: 1.2;
-$form-fieldset-legend-margin: 20px 0;
-$form-fieldset-legend-padding: 0;
-$form-fieldset-legend-width: inherit;
+$form-fieldset-border: 0 !default;
+$form-fieldset-margin: 0 !default;
+$form-fieldset-padding: 0 !default;
+$form-fieldset-legend-color: $font-default-color !default;
+$form-fieldset-legend-font-size: 24px !default;
+$form-fieldset-legend-font-family: $font-default-font-family-secondary !default;
+$form-fieldset-legend-font-weight: 600 !default;
+$form-fieldset-legend-font-style: normal !default;
+$form-fieldset-legend-line-height: 1.2 !default;
+$form-fieldset-legend-margin: 20px 0 !default;
+$form-fieldset-legend-padding: 0 !default;
+$form-fieldset-legend-width: inherit !default;
 
 /* Field */
 
-$form-fieldset-field-type: block;
-$form-fieldset-field-margin: 0 0 20px;
-$form-fieldset-field-box-sizing: border-box;
+$form-fieldset-field-type: block !default;
+$form-fieldset-field-margin: 0 0 20px !default;
+$form-fieldset-field-box-sizing: border-box !default;
 
-$form-fieldset-field-choice-before-width: auto;
-$form-fieldset-field-choice-before-padding: 0;
-$form-fieldset-field-choice-before-height: inherit;
-$form-fieldset-field-choice-before-float: none;
+$form-fieldset-field-choice-before-width: auto !default;
+$form-fieldset-field-choice-before-padding: 0 !default;
+$form-fieldset-field-choice-before-height: inherit !default;
+$form-fieldset-field-choice-before-float: none !default;
 
 
 /* Label */
-$form-fieldset-field-label-padding: 6px 15px 0 0;
-$form-fieldset-field-label-text-align: left;
-$form-fieldset-field-label-width: auto;
-$form-fieldset-field-label-float: none;
-$form-fieldset-field-label-font-weight: 600;
+$form-fieldset-field-label-padding: 6px 15px 0 0 !default;
+$form-fieldset-field-label-text-align: left !default;
+$form-fieldset-field-label-width: auto !default;
+$form-fieldset-field-label-float: none !default;
+$form-fieldset-field-label-font-weight: 600 !default;
 
-$form-fieldset-field-choice-label-margin: 0 0 0 5px;
+$form-fieldset-field-choice-label-margin: 0 0 0 5px !default;
 
 /* Control */
-$form-fieldset-field-control-width: auto;
-$form-fieldset-field-control-float: none;
+$form-fieldset-field-control-width: auto !default;
+$form-fieldset-field-control-float: none !default;
 
 /* Action toolbar */
-$form-action-toolbar-margin: 20px 0;
-$form-action-toolbar-padding: 0;
+$form-action-toolbar-margin: 20px 0 !default;
+$form-action-toolbar-padding: 0 !default;
 
 /*
  * Tabs
@@ -227,23 +325,27 @@ $form-action-toolbar-padding: 0;
 
 /* Detail tabs */
 
-$detail-tab-title-background: black;
-$detail-tab-title-border-color: gray;
-$detail-tab-title-color: white;
-$detail-tab-title-font-weight: 300;
-$detail-tab-title-text-decoration: none;
-$detail-tab-title-padding: 5px 25px;
-$detail-tab-title-height: 25px;
-$detail-tab-title-font-size: 1.5rem;
+$detail-tab-title-background: black !default;
+$detail-tab-title-border-color: gray !default;
+$detail-tab-title-color: white !default;
+$detail-tab-title-font-weight: 300 !default;
+$detail-tab-title-text-decoration: none !default;
+$detail-tab-title-padding: 5px 25px !default;
+$detail-tab-title-height: 25px !default;
+$detail-tab-title-font-size: 1.5rem !default;
 
-$detail-tab-title-hover-background: orange;
-$detail-tab-title-hover-color: white;
-$detail-tab-title-hover-border: red;
+$detail-tab-title-hover-background: orange !default;
+$detail-tab-title-hover-color: white !default;
+$detail-tab-title-hover-border: red !default;
 
-$detail-tab-title-active-background: orange;
-$detail-tab-title-active-color: white;
-$detail-tab-title-active-border: red;
+$detail-tab-title-active-background: orange !default;
+$detail-tab-title-active-color: white !default;
+$detail-tab-title-active-border: red !default;
 
-$detail-tab-content-background: black;
+$detail-tab-content-background: gray !default;
+$detail-tab-content-border: 1px solid black !default;
+$detail-tab-content-margin: 31px !default;
+$detail-tab-content-font-size: $font-default-font-size !default;
+
 
 

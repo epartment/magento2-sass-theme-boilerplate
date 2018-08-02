@@ -1,0 +1,98 @@
+input[type="text"], input[type="radio"], input[type="checkbox"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], select, textarea {
+  background-color: $input-default-background-color;
+  border: $input-default-border;
+  border-radius: $input-default-border-radius;
+  height: $input-default-height;
+  width: $input-default-width;
+  margin: $input-default-margin;
+  padding: $input-default-padding;
+  vertical-align: $input-default-vertical-align;
+  font-size: $input-default-font-size;
+  color: $input-default-color;
+  font-family: $input-default-font-family;
+  font-weight: $input-default-font-weight;
+  font-style: $input-default-font-style;
+  line-height: $input-default-line-height;
+
+  &:focus {
+    background-color: $input-default-focus-background-color;
+    border: $input-default-focus-border;
+    color: $input-default-focus-color;
+    font-style: $input-default-focus-font-style;
+  }
+
+  &:disabled {
+    background-color: $input-default-disabled-background-color;
+    border: $input-default-disabled-border;
+    opacity: $input-default-disabled-opacity;
+    color: $input-default-disabled-color;
+    font-style: $input-default-disabled-font-style;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $input-default-placeholder-color !important;
+    font-style: $input-default-placeholder-font-style;
+  }
+
+}
+
+textarea {
+  height: $input-textarea-default-height;
+  resize: $input-textarea-default-resize;
+}
+
+input[type="checkbox"] {
+  width: $input-choice-default-width;
+}
+
+.limiter-options {
+  background-color: $input-limiter-background-color;
+  border: $input-limiter-border;
+  border-radius: $input-limiter-border-radius;
+  height: $input-limiter-height;
+  width: $input-limiter-width;
+  margin: $input-limiter-margin;
+  padding: $input-limiter-padding;
+  vertical-align: $input-limiter-vertical-align;
+  font-size: $input-limiter-font-size;
+  color: $input-limiter-color;
+  font-family: $input-limiter-font-family;
+  font-weight: $input-limiter-font-weight;
+  font-style: $input-limiter-font-style;
+  line-height: $input-limiter-line-height;
+}
+
+.sorter-options {
+  background-color: $input-sorter-background-color;
+  border: $input-sorter-border;
+  border-radius: $input-sorter-border-radius;
+  height: $input-sorter-height;
+  width: $input-sorter-width;
+  margin: $input-sorter-margin;
+  padding: $input-sorter-padding;
+  vertical-align: $input-sorter-vertical-align;
+  font-size: $input-sorter-font-size;
+  color: $input-sorter-color;
+  font-family: $input-sorter-font-family;
+  font-weight: $input-sorter-font-weight;
+  font-style: $input-sorter-font-style;
+  line-height: $input-sorter-line-height;
+}
+
+/****
+** Sidebar input
+****/
+
+.sidebar {
+  input[type="text"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], input[type="datetime"], input[type="email"], select {
+    border: $input-default-border;
+    border-radius: $input-default-border-radius;
+    padding: $input-default-padding;
+    line-height: $input-default-line-height;
+    font-size: $input-default-font-size;
+    font-weight: $input-default-font-weight;
+    color: #2e2e2e;
+    height: 45px;
+  }
+}
