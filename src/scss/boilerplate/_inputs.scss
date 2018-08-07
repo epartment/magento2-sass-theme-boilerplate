@@ -37,6 +37,84 @@ input[type="text"], input[type="radio"], input[type="checkbox"], input[type="ema
 
 }
 
+input[type="text"] {
+  background-color: $input-type-text-background-color;
+  border-color: $input-type-text-border-color;
+  border: $input-type-text-border;
+  border-radius: $input-type-text-border-radius;
+  height: $input-type-text-height;
+  width: $input-type-text-width;
+  margin: $input-type-text-margin;
+  padding: $input-type-text-padding;
+  vertical-align: $input-type-text-vertical-align;
+  font-size: $input-type-text-font-size;
+  color: $input-type-text-color;
+  font-family: $input-type-text-font-family;
+  font-weight: $input-type-text-font-weight;
+  font-style: $input-type-text-font-style;
+  line-height: $input-type-text-line-height;
+
+  &:focus {
+    background-color: $input-type-text-focus-background-color;
+    border: $input-type-text-focus-border;
+    color: $input-type-text-focus-color;
+    font-style: $input-type-text-focus-font-style;
+  }
+
+  &:disabled {
+    background-color: $input-type-text-disabled-background-color;
+    border: $input-type-text-disabled-border;
+    opacity: $input-type-text-disabled-opacity;
+    color: $input-type-text-disabled-color;
+    font-style: $input-type-text-disabled-font-style;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $input-type-text-placeholder-color !important;
+    font-style: $input-type-text-placeholder-font-style;
+  }
+}
+
+select {
+  background-color: $input-select-background-color;
+  border-color: $input-select-border-color;
+  border: $input-select-border;
+  border-radius: $input-select-border-radius;
+  height: $input-select-height;
+  width: $input-select-width;
+  margin: $input-select-margin;
+  padding: $input-select-padding;
+  vertical-align: $input-select-vertical-align;
+  font-size: $input-select-font-size;
+  color: $input-select-color;
+  font-family: $input-select-font-family;
+  font-weight: $input-select-font-weight;
+  font-style: $input-select-font-style;
+  line-height: $input-select-line-height;
+
+  &:focus {
+    background-color: $input-select-focus-background-color;
+    border: $input-select-focus-border;
+    color: $input-select-focus-color;
+    font-style: $input-select-focus-font-style;
+  }
+
+  &:disabled {
+    background-color: $input-select-disabled-background-color;
+    border: $input-select-disabled-border;
+    opacity: $input-select-disabled-opacity;
+    color: $input-select-disabled-color;
+    font-style: $input-select-disabled-font-style;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $input-select-placeholder-color !important;
+    font-style: $input-select-placeholder-font-style;
+  }
+}
+
 textarea {
   height: $input-textarea-default-height;
   resize: $input-textarea-default-resize;

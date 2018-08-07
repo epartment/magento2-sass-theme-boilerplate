@@ -13,6 +13,7 @@ html, body {
     font-weight: $font-family-heading-h1-font-weight;
     line-height: $font-family-heading-h1-line-height;
     margin: $font-family-heading-h1-margin;
+    color: $font-family-heading-h1-color;
   }
 
   h2 {
@@ -20,6 +21,7 @@ html, body {
     font-weight: $font-family-heading-h2-font-weight;
     line-height: $font-family-heading-h2-line-height;
     margin: $font-family-heading-h2-margin;
+    color: $font-family-heading-h2-color;
   }
 
   h3 {
@@ -27,6 +29,7 @@ html, body {
     font-weight: $font-family-heading-h3-font-weight;
     line-height: $font-family-heading-h3-line-height;
     margin: $font-family-heading-h3-margin;
+    color: $font-family-heading-h3-color;
   }
 
   h4 {
@@ -34,6 +37,7 @@ html, body {
     font-weight: $font-family-heading-h4-font-weight;
     line-height: $font-family-heading-h4-line-height;
     margin: $font-family-heading-h4-margin;
+    color: $font-family-heading-h4-color;
   }
 
   h5 {
@@ -41,10 +45,15 @@ html, body {
     font-weight: $font-family-heading-h5-font-weight;
     line-height: $font-family-heading-h5-line-height;
     margin: $font-family-heading-h5-margin;
+    color: $font-family-heading-h5-color;
   }
 
   h6 {
-    font-size: 14px;
+    font-size: $font-family-heading-h6-font-size;
+    font-weight: $font-family-heading-h6-font-weight;
+    line-height: $font-family-heading-h6-line-height;
+    margin: $font-family-heading-h6-margin;
+    color: $font-family-heading-h6-color;
   }
 
   p {
@@ -64,6 +73,39 @@ html, body {
       font-weight: $font-default-link-hover-font-weight;
       color: $font-default-link-hover-color;
       text-decoration: $font-default-link-hover-text-decoration;
+    }
+  }
+
+  .filter-title {
+    font-size: $font-filter-title-font-size;
+    font-weight: $font-filter-title-font-weight;
+    margin: $font-filter-title-margin;
+    color: $font-filter-title-color;
+    line-height: $font-filter-title-line-height;
+
+    strong {
+      font-size: $font-filter-title-font-size;
+      font-weight: $font-filter-title-font-weight;
+      margin: $font-filter-title-margin;
+      color: $font-filter-title-color;
+      line-height: $font-filter-title-line-height;
+    }
+  }
+
+  .filter-subtitle {
+    font-size: $font-filter-subtitle-font-size;
+    font-weight: $font-filter-subtitle-font-weight;
+    margin: $font-filter-subtitle-margin;
+    color: $font-filter-subtitle-color;
+    line-height: $font-filter-subtitle-line-height;
+  }
+
+  .filter-options {
+    .filter-options-title {
+      font-size: $font-filter-options-title-font-size;
+      font-weight: $font-filter-options-title-font-weight;
+      margin: $font-filter-options-title-margin;
+      color: $font-filter-options-title-color;
     }
   }
 }

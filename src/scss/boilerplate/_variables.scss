@@ -46,37 +46,47 @@ $font-family-heading-h1-font-size: 40px !default;
 $font-family-heading-h1-font-weight: $font-family-heading-font-weight !default;
 $font-family-heading-h1-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h1-margin: 0rem 0 40px 0 !default;
+$font-family-heading-h1-color: $font-default-heading-color !default;
 
 /* H2 */
 $font-family-heading-h2-font-size: 2.6rem !default;
 $font-family-heading-h2-font-weight: $font-family-heading-font-weight !default;
 $font-family-heading-h2-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h2-margin: 2.5rem 0 2rem 0 !default;
+$font-family-heading-h2-color: $font-default-heading-color !default;
 
 /* H3 */
 $font-family-heading-h3-font-size: 1.8rem !default;
 $font-family-heading-h3-font-weight: $font-family-heading-font-weight !default;
 $font-family-heading-h3-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h3-margin: 1.5rem 0 1rem 0 !default;
+$font-family-heading-h3-color: $font-default-heading-color !default;
+
 
 /* H4 */
 $font-family-heading-h4-font-size: 1.4rem !default;
 $font-family-heading-h4-font-weight: 700 !default;
 $font-family-heading-h4-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h4-margin: 2rem 0 2rem 0 !default;
+$font-family-heading-h4-color: $font-default-heading-color !default;
+
 
 /* H5 */
 $font-family-heading-h5-font-size: 1.2rem !default;
 $font-family-heading-h5-font-weight: 700 !default;
 $font-family-heading-h5-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h5-margin: 2rem 0 2rem 0 !default;
+$font-family-heading-h5-color: $font-default-heading-color !default;
+
 
 /* H6 */
 $font-family-heading-h6-font-size: 1rem !default;
 $font-family-heading-h6-font-weight: 700 !default;
 $font-family-heading-h6-line-height: $font-family-heading-line-height !default;
 $font-family-heading-h6-margin: 2rem 0 2rem 0 !default;
+$font-family-heading-h6-color: $font-default-heading-color !default;
 
+/* Link */
 $font-default-link-color: $color-boilerplate-blue !default;
 $font-default-link-text-decoration: none !default;
 $font-default-link-font-weight: $font-default-font-weight !default;
@@ -85,7 +95,23 @@ $font-default-link-hover-font-weight: $font-default-link-font-weight !default;
 $font-default-link-hover-text-decoration: underline !default;
 
 /* Standard title classes */
+$font-filter-title-font-size: 18px !default;
+$font-filter-title-font-weight: 700 !default;
+$font-filter-title-line-height: 1.421617 !default;
+$font-filter-title-margin: 0 0 20px 0 !default;
+$font-filter-title-color: $font-default-color !default;
 
+$font-filter-subtitle-font-size: $font-default-font-size !default;
+$font-filter-subtitle-font-weight: 700 !default;
+$font-filter-subtitle-line-height: 1.421617 !default;
+$font-filter-subtitle-margin: 0 0 10px 0 !default;
+$font-filter-subtitle-color: $font-default-color !default;
+
+$font-filter-options-title-font-size: $font-default-font-size !default;
+$font-filter-options-title-font-weight: 700 !default;
+$font-filter-options-title-line-height: 1.421617 !default;
+$font-filter-options-title-margin: 0 0 10px 0 !default;
+$font-filter-options-title-color: $font-default-color !default;
 
 /*
  * Buttons
@@ -108,6 +134,7 @@ $button-default-hover-color: white !default;
 /* Button primary */
 $button-primary-background-color: $button-default-background-color !default;
 $button-primary-border: $button-default-border !default;
+$button-primary-border-radius: $button-default-border-radius;
 $button-primary-color: $button-default-color !default;
 $button-primary-font-weight: 600 !default;
 $button-primary-font-size: $button-default-font-size !default;
@@ -214,6 +241,67 @@ $input-default-focus-background-color: $input-default-background-color !default;
 $input-default-focus-border: $input-default-border !default;
 $input-default-focus-color: $input-default-color !default;
 $input-default-focus-font-style: $input-default-font-style !default;
+
+/* Input[type="text"] */
+$input-type-text-background-color: $input-default-background-color !default;
+$input-type-text-border-color: $input-default-border-color !default;
+$input-type-text-border: $input-default-border !default;
+$input-type-text-border-radius: $input-default-border-radius !default;
+$input-type-text-height: $input-default-height !default;
+$input-type-text-width: $input-default-width !default;
+$input-type-text-margin: $input-default-margin !default;
+$input-type-text-padding: $input-default-padding !default;
+$input-type-text-vertical-align: $input-default-vertical-align !default;
+$input-type-text-font-size: $input-default-font-style !default;
+$input-type-text-color: $input-default-color !default;
+$input-type-text-font-family: $input-default-font-family !default;
+$input-type-text-font-weight: $input-default-font-weight !default;
+$input-type-text-font-style: $input-default-font-style !default;
+$input-type-text-line-height: $input-default-line-height !default;
+
+/* Input[type="text"] Disabled state */
+$input-type-text-disabled-background-color: $input-default-disabled-background-color !default;
+$input-type-text-disabled-border: $input-default-disabled-border !default;
+$input-type-text-disabled-opacity: $input-default-disabled-opacity !default;
+$input-type-text-disabled-color: $input-default-disabled-color !default;
+$input-type-text-disabled-font-style: $input-default-disabled-font-style !default;
+
+/* Input[type="text"] Focus state */
+$input-type-text-focus-background-color: $input-default-focus-background-color !default;
+$input-type-text-focus-border: $input-default-focus-border !default;
+$input-type-text-focus-color: $input-default-focus-color !default;
+$input-type-text-focus-font-style: $input-default-focus-font-style !default;
+
+/* Select */
+$input-select-background-color: $input-default-background-color !default;
+$input-select-border-color: $input-default-border-color !default;
+$input-select-border: $input-default-border !default;
+$input-select-border-radius: $input-default-border-radius !default;
+$input-select-height: $input-default-height !default;
+$input-select-width: $input-default-width !default;
+$input-select-margin: $input-default-margin !default;
+$input-select-padding: $input-default-padding !default;
+$input-select-vertical-align: $input-default-vertical-align !default;
+$input-select-font-size: $input-default-font-size !default;
+$input-select-color: $input-default-color !default;
+$input-select-font-family: $input-default-font-family !default;
+$input-select-font-weight: $input-default-font-weight !default;
+$input-select-font-style: $input-default-font-style !default;
+$input-select-line-height: $input-default-line-height !default;
+
+/* Select Disabled state */
+$input-select-disabled-background-color: $input-default-disabled-background-color !default;
+$input-select-disabled-border: $input-default-disabled-border !default;
+$input-select-disabled-opacity: $input-default-disabled-opacity !default;
+$input-select-disabled-color: $input-default-disabled-color !default;
+$input-select-disabled-font-style: $input-default-disabled-font-style !default;
+
+/* Select Focus state */
+$input-select-focus-background-color: $input-default-focus-background-color !default;
+$input-select-focus-border: $input-default-focus-border !default;
+$input-select-focus-color: $input-default-focus-color !default;
+$input-select-focus-font-style: $input-default-focus-font-style !default;
+
 
 /* Textarea */
 $input-textarea-default-height: auto !default;
@@ -346,6 +434,9 @@ $detail-tab-content-background: gray !default;
 $detail-tab-content-border: 1px solid black !default;
 $detail-tab-content-margin: 31px !default;
 $detail-tab-content-font-size: $font-default-font-size !default;
+
+
+
 
 
 
