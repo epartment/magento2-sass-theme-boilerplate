@@ -94,6 +94,22 @@ $font-default-link-hover-color: $font-default-link-color !default;
 $font-default-link-hover-font-weight: $font-default-link-font-weight !default;
 $font-default-link-hover-text-decoration: underline !default;
 
+/* Header Links */
+$font-header-link-color: $font-default-link-color !default;
+$font-header-link-text-decoration: $font-default-link-text-decoration !default;
+$font-header-link-font-weight: $font-default-link-font-weight !default;
+$font-header-link-hover-color: $font-default-link-hover-color !default;
+$font-header-link-hover-font-weight: $font-default-link-hover-font-weight !default;
+$font-header-link-hover-text-decoration: $font-default-link-hover-text-decoration !default;
+
+/* Footer links */
+$font-footer-link-color: $font-default-link-color !default;
+$font-footer-link-text-decoration: $font-default-link-text-decoration !default;
+$font-footer-link-font-weight: $font-default-link-font-weight !default;
+$font-footer-link-hover-color: $font-default-link-hover-color !default;
+$font-footer-link-hover-font-weight: $font-default-link-hover-font-weight !default;
+$font-footer-link-hover-text-decoration: $font-default-link-hover-text-decoration !default;
+
 /* Standard title classes */
 $font-filter-title-font-size: 18px !default;
 $font-filter-title-font-weight: 700 !default;
@@ -112,6 +128,12 @@ $font-filter-options-title-font-weight: 700 !default;
 $font-filter-options-title-line-height: 1.421617 !default;
 $font-filter-options-title-margin: 0 0 10px 0 !default;
 $font-filter-options-title-color: $font-default-color !default;
+
+$font-product-item-name-font-size: $font-default-font-size !default;
+$font-product-item-name-font-weight: $font-default-font-weight !default;
+$font-product-item-name-line-height: $font-default-font-line-height !default;
+$font-product-item-name-margin: 5px 0px !default;
+$font-product-item-name-color: $font-default-color !default;
 
 /*
  * Buttons
@@ -166,6 +188,7 @@ $button-secondary-hover-color: red !default;
  */
 $swatch-default-background: $color-boilerplate-light-gray !default;
 $swatch-default-border: 1px solid $color-boilerplate-lighter-gray !default;
+$swatch-default-border-radius: 0px !default;
 $swatch-default-color: $color-boilerplate-gray !default;
 $swatch-default-font-size: $font-default-font-size !default;
 $swatch-default-font-weight: 700 !default;
@@ -259,6 +282,10 @@ $input-type-text-font-weight: $input-default-font-weight !default;
 $input-type-text-font-style: $input-default-font-style !default;
 $input-type-text-line-height: $input-default-line-height !default;
 
+/* Input[type="text"] Placeholder */
+$input-type-text-placeholder-color: $input-default-placeholder-color !default;
+$input-type-text-placeholder-font-style: $input-default-placeholder-font-style !default;
+
 /* Input[type="text"] Disabled state */
 $input-type-text-disabled-background-color: $input-default-disabled-background-color !default;
 $input-type-text-disabled-border: $input-default-disabled-border !default;
@@ -289,6 +316,10 @@ $input-select-font-weight: $input-default-font-weight !default;
 $input-select-font-style: $input-default-font-style !default;
 $input-select-line-height: $input-default-line-height !default;
 
+/* Select Placeholder */
+$input-select-placeholder-color: $input-default-placeholder-color !default;
+$input-select-placeholder-font-style: $input-default-placeholder-font-style !default;
+
 /* Select Disabled state */
 $input-select-disabled-background-color: $input-default-disabled-background-color !default;
 $input-select-disabled-border: $input-default-disabled-border !default;
@@ -304,11 +335,43 @@ $input-select-focus-font-style: $input-default-focus-font-style !default;
 
 
 /* Textarea */
-$input-textarea-default-height: auto !default;
-$input-textarea-default-resize: vertical !default;
+$input-textarea-resize: vertical !default;
+$input-textarea-background-color: $input-default-background-color !default;
+$input-textarea-border-color: $input-default-border-color !default;
+$input-textarea-border: $input-default-border !default;
+$input-textarea-border-radius: $input-default-border-radius !default;
+$input-textarea-height: auto !default;
+$input-textarea-min-height: $input-default-height !default;
+$input-textarea-width: $input-default-width !default;
+$input-textarea-margin: $input-default-margin !default;
+$input-textarea-padding: $input-default-padding !default;
+$input-textarea-vertical-align: $input-default-vertical-align !default;
+$input-textarea-font-size: $input-default-font-size !default;
+$input-textarea-color: $input-default-color !default;
+$input-textarea-font-family: $input-default-font-family !default;
+$input-textarea-font-weight: $input-default-font-weight !default;
+$input-textarea-font-style: $input-default-font-style !default;
+$input-textarea-line-height: $input-default-line-height !default;
+
+/* Textarea Placeholder */
+$input-textarea-placeholder-color: $input-default-placeholder-color !default;
+$input-textarea-placeholder-font-style: $input-default-placeholder-font-style !default;
+
+/* Textarea Disabled state */
+$input-textarea-disabled-background-color: $input-default-disabled-background-color !default;
+$input-textarea-disabled-border: $input-default-disabled-border !default;
+$input-textarea-disabled-opacity: $input-default-disabled-opacity !default;
+$input-textarea-disabled-color: $input-default-disabled-color !default;
+$input-textarea-disabled-font-style: $input-default-disabled-font-style !default;
+
+/* Textarea Focused state */
+$input-textarea-focus-background-color: $input-default-focus-background-color !default;
+$input-textarea-focus-border: $input-default-focus-border !default;
+$input-textarea-focus-color: $input-default-focus-color !default;
+$input-textarea-focus-font-style: $input-default-focus-font-style !default;
 
 /* Checkbox / Radio */
-$input-choice-default-width: auto !default;
+$input-choice-width: auto !default;
 
 /* Limiter */
 $input-limiter-background-color: white !default;
@@ -327,6 +390,19 @@ $input-limiter-font-weight: $input-default-font-weight !default;
 $input-limiter-font-style: $input-default-font-style !default;
 $input-limiter-line-height: 1.42 !default;
 
+/* Textarea Disabled state */
+$input-limiter-disabled-background-color: $input-default-disabled-background-color !default;
+$input-limiter-disabled-border: $input-default-disabled-border !default;
+$input-limiter-disabled-opacity: $input-default-disabled-opacity !default;
+$input-limiter-disabled-color: $input-default-disabled-color !default;
+$input-limiter-disabled-font-style: $input-default-disabled-font-style !default;
+
+/* Textarea Focused state */
+$input-limiter-focus-background-color: $input-default-focus-background-color !default;
+$input-limiter-focus-border: $input-default-focus-border !default;
+$input-limiter-focus-color: $input-default-focus-color !default;
+$input-limiter-focus-font-style: $input-default-focus-font-style !default;
+
 /* Sorter */
 $input-sorter-background-color: white !default;
 $input-sorter-border-color: $color-boilerplate-gray !default;
@@ -344,12 +420,32 @@ $input-sorter-font-weight: $input-default-font-weight !default;
 $input-sorter-font-style: $input-default-font-style !default;
 $input-sorter-line-height: 1.42 !default;
 
+/* Sorter Disabled state */
+$input-sorter-disabled-background-color: $input-default-disabled-background-color !default;
+$input-sorter-disabled-border: $input-default-disabled-border !default;
+$input-sorter-disabled-opacity: $input-default-disabled-opacity !default;
+$input-sorter-disabled-color: $input-default-disabled-color !default;
+$input-sorter-disabled-font-style: $input-default-disabled-font-style !default;
+
+/*
+ * Header
+ */
+$header-background-color: #fff !default;
+$header-text-color: $font-default-color !default;
+$header-padding: 30px 20px 0 !default;
+$header-panel-background-color: $header-background-color !default;
+$header-panel-text-color: $header-text-color !default;
+$header-panel-padding: 10px 20px !default;
+$header-panel-bottom-border-color: #e8e8e8 !default;
+
+
 /*
  * Menu bar
  */
 
 $menu-bar-background: $color-boilerplate-light-gray !default;
 $menu-bar-margin: 0 0 25px !default;
+$menu-bar-menu-item-font-family: $font-default-font-family-primary !default;
 $menu-bar-menu-item-font-weight: 700 !default;
 $menu-bar-menu-item-font-size: $font-default-font-size !default;
 $menu-bar-menu-item-color: $color-boilerplate-gray !default;
@@ -379,7 +475,6 @@ $form-fieldset-legend-padding: 0 !default;
 $form-fieldset-legend-width: inherit !default;
 
 /* Field */
-
 $form-fieldset-field-type: block !default;
 $form-fieldset-field-margin: 0 0 20px !default;
 $form-fieldset-field-box-sizing: border-box !default;
@@ -406,6 +501,9 @@ $form-fieldset-field-control-float: none !default;
 /* Action toolbar */
 $form-action-toolbar-margin: 20px 0 !default;
 $form-action-toolbar-padding: 0 !default;
+
+
+
 
 /*
  * Tabs
@@ -434,6 +532,13 @@ $detail-tab-content-background: gray !default;
 $detail-tab-content-border: 1px solid black !default;
 $detail-tab-content-margin: 31px !default;
 $detail-tab-content-font-size: $font-default-font-size !default;
+
+$footer-background: #ffffff !default;
+$footer-content-margin: 25px auto !default;
+$footer-content-padding: 25px 20px 0 !default;
+$footer-content-color: $color-boilerplate-black !default;
+$footer-line-color: $color-boilerplate-black !default;
+
 
 
 

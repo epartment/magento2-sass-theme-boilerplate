@@ -69,6 +69,13 @@ html, body {
     color: $font-default-link-color;
     text-decoration: $font-default-link-text-decoration;
 
+    &:visited {
+      font-size: $font-default-font-size;
+      font-weight: $font-default-link-font-weight;
+      color: $font-default-link-color;
+      text-decoration: $font-default-link-text-decoration;
+    }
+
     &:hover {
       font-weight: $font-default-link-hover-font-weight;
       color: $font-default-link-hover-color;
@@ -106,6 +113,21 @@ html, body {
       font-weight: $font-filter-options-title-font-weight;
       margin: $font-filter-options-title-margin;
       color: $font-filter-options-title-color;
+    }
+  }
+
+  .product-item-name {
+    > a {
+      color: $font-product-item-name-color;
+      font-size: $font-product-item-name-font-size;
+      font-weight: $font-product-item-name-font-weight;
+      line-height: $font-product-item-name-line-height;
+      margin: $font-product-item-name-margin;
+
+
+      &:visited {
+        color: $font-product-item-name-color;
+      }
     }
   }
 }

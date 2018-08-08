@@ -116,12 +116,48 @@ select {
 }
 
 textarea {
-  height: $input-textarea-default-height;
-  resize: $input-textarea-default-resize;
+  resize: $input-textarea-resize;
+  background-color: $input-textarea-background-color;
+  border-color: $input-textarea-border-color;
+  border: $input-textarea-border;
+  border-radius: $input-textarea-border-radius;
+  height: $input-textarea-height;
+  min-height: $input-textarea-min-height;
+  width: $input-textarea-width;
+  margin: $input-textarea-margin;
+  padding: $input-textarea-padding;
+  vertical-align: $input-textarea-vertical-align;
+  font-size: $input-textarea-font-size;
+  color: $input-textarea-color;
+  font-family: $input-textarea-font-family;
+  font-weight: $input-textarea-font-weight;
+  font-style: $input-textarea-font-style;
+  line-height: $input-textarea-line-height;
+
+  &:focus {
+    background-color: $input-textarea-focus-background-color;
+    border: $input-textarea-focus-border;
+    color: $input-textarea-focus-color;
+    font-style: $input-textarea-focus-font-style;
+  }
+
+  &:disabled {
+    background-color: $input-textarea-disabled-background-color;
+    border: $input-textarea-disabled-border;
+    opacity: $input-textarea-disabled-opacity;
+    color: $input-textarea-disabled-color;
+    font-style: $input-textarea-disabled-font-style;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $input-select-placeholder-color !important;
+    font-style: $input-select-placeholder-font-style;
+  }
 }
 
 input[type="checkbox"] {
-  width: $input-choice-default-width;
+  width: $input-choice-width;
 }
 
 .limiter-options {
@@ -139,6 +175,21 @@ input[type="checkbox"] {
   font-weight: $input-limiter-font-weight;
   font-style: $input-limiter-font-style;
   line-height: $input-limiter-line-height;
+
+  &:focus {
+    background-color: $input-limiter-focus-background-color;
+    border: $input-limiter-focus-border;
+    color: $input-limiter-focus-color;
+    font-style: $input-limiter-focus-font-style;
+  }
+
+  &:disabled {
+    background-color: $input-limiter-disabled-background-color;
+    border: $input-limiter-disabled-border;
+    opacity: $input-limiter-disabled-opacity;
+    color: $input-limiter-disabled-color;
+    font-style: $input-limiter-disabled-font-style;
+  }
 }
 
 .sorter-options {
@@ -173,4 +224,9 @@ input[type="checkbox"] {
     color: #2e2e2e;
     height: 45px;
   }
+}
+
+/* Search input icon */
+.block-search .action.search {
+  height: $input-default-height;
 }

@@ -1,0 +1,25 @@
+.page-footer {
+  background: $footer-background;
+
+  .footer {
+    a {
+      color: $font-footer-link-color;
+      text-decoration: $font-footer-link-text-decoration;
+      font-weight: $font-footer-link-font-weight;
+
+      &:hover {
+        color: $font-footer-link-hover-color;
+        font-weight: $font-footer-link-hover-font-weight;
+        text-decoration: $font-footer-link-hover-text-decoration;
+      }
+    }
+
+    &.content {
+      margin: $footer-content-margin;
+      padding: $footer-content-padding;
+      color: $footer-content-color;
+      border-color: $footer-line-color;
+    }
+  }
+
+}

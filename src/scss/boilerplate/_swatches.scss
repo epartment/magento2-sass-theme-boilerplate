@@ -1,6 +1,7 @@
 .swatch-option {
   background: $swatch-default-background;
   border: $swatch-default-border;
+  border-radius: $swatch-default-border-radius;
   color: $swatch-default-color;
   font-size: $swatch-default-font-size;
   font-weight: $swatch-default-font-weight;
@@ -48,6 +49,7 @@
     .swatch-option {
       background: $swatch-default-background;
       border: $swatch-default-border;
+      border-radius: $swatch-default-border-radius;
       color: $swatch-default-color;
       font-size: $swatch-default-font-size;
       font-weight: $swatch-default-font-weight;
