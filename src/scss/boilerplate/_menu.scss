@@ -27,5 +27,26 @@
         }
       }
     }
+    .level0 {
+      .submenu {
+        background: $menu-bar-menu-item-submenu-background;
+
+        li {
+          a {
+            color: $menu-bar-menu-item-submenu-item-color;
+            font-weight: $menu-bar-menu-item-submenu-item-font-weight;
+            border-color: $menu-bar-menu-item-submenu-item-border-color;
+          }
+
+          &:hover {
+            background: $menu-bar-menu-item-submenu-item-hover-background;
+            a {
+              color: $menu-bar-menu-item-submenu-item-hover-color;
+              font-weight: $menu-bar-menu-item-submenu-item-hover-font-weight;
+            }
+          }
+        }
+      }
+    }
   }
 }

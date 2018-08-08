@@ -11,6 +11,11 @@ button {
   border-radius: $button-default-border-radius;
   transition: $button-default-transition;
   color: $button-default-color;
+  font-size: $button-default-font-size;
+  font-weight: $button-default-font-weight;
+  transition: $button-default-transition;
+  padding: $button-default-padding;
+  text-transform: $button-default-text-transform;
 
   &.action {
     &:hover {
@@ -24,6 +29,8 @@ button {
       padding: $button-primary-padding;
       font-size: $button-primary-font-size;
       text-transform: $button-primary-text-transform;
+      font-weight: $button-primary-font-weight;
+      transition: $button-primary-transition;
 
       &:hover {
         background: $button-primary-hover-background-color;
@@ -46,6 +53,7 @@ button {
       border: $button-secondary-border;
       color: $button-secondary-color;
       font-size: $button-secondary-font-size;
+      text-transform: $button-secondary-text-transform;
 
       &:hover {
         background: $button-secondary-hover-background-color;
@@ -92,6 +100,15 @@ button {
       border: $button-secondary-hover-border;
       color: $button-secondary-hover-color;
     }
+  }
+}
+
+.block.newsletter {
+  .action.subscribe {
+    height: $input-default-height;
+  }
+  .field .control:before {
+    line-height: $input-default-height;
   }
 }
 

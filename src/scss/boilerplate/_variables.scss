@@ -455,6 +455,13 @@ $menu-bar-menu-item-hover-border-top: none !default;
 $menu-bar-menu-item-hover-border-bottom: $menu-bar-menu-item-hover-default-border !default;
 $menu-bar-menu-item-hover-border-left: none !default;
 $menu-bar-menu-item-hover-border-right: none !default;
+$menu-bar-menu-item-submenu-background: #ffffff !default;
+$menu-bar-menu-item-submenu-item-color: $color-boilerplate-black !default;
+$menu-bar-menu-item-submenu-item-border-color: $color-boilerplate-orange !default;
+$menu-bar-menu-item-submenu-item-font-weight: 400 !default;
+$menu-bar-menu-item-submenu-item-hover-background: #eaeaea !default;
+$menu-bar-menu-item-submenu-item-hover-color: $color-boilerplate-black !default;
+$menu-bar-menu-item-submenu-item-hover-font-weight: 400 !default;
 
 /*
  * Fieldset / Fields
