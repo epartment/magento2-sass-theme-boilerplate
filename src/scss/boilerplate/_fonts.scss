@@ -1,11 +1,14 @@
 html, body {
   font-family: $font-family;
   color: $font-default-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-heading;
     color: $font-family-heading-color;
     font-weight: $font-family-heading-font-weight;
+    text-transform: $font-family-heading-text-transform;
   }
 
   h1 {
@@ -89,6 +92,7 @@ html, body {
     margin: $font-filter-title-margin;
     color: $font-filter-title-color;
     line-height: $font-filter-title-line-height;
+    text-transform: $font-filter-title-text-transform;
 
     strong {
       font-size: $font-filter-title-font-size;
@@ -96,6 +100,7 @@ html, body {
       margin: $font-filter-title-margin;
       color: $font-filter-title-color;
       line-height: $font-filter-title-line-height;
+      text-transform: $font-filter-title-text-transform;
     }
   }
 
@@ -105,6 +110,7 @@ html, body {
     margin: $font-filter-subtitle-margin;
     color: $font-filter-subtitle-color;
     line-height: $font-filter-subtitle-line-height;
+    text-transform: $font-filter-subtitle-text-transform;
   }
 
   .filter-options {
@@ -113,6 +119,7 @@ html, body {
       font-weight: $font-filter-options-title-font-weight;
       margin: $font-filter-options-title-margin;
       color: $font-filter-options-title-color;
+      text-transform: $font-filter-options-title-text-transform;
     }
   }
 
@@ -123,7 +130,7 @@ html, body {
       font-weight: $font-product-item-name-font-weight;
       line-height: $font-product-item-name-line-height;
       margin: $font-product-item-name-margin;
-
+      text-transform: $font-product-item-name-text-transform;
 
       &:visited {
         color: $font-product-item-name-color;

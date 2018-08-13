@@ -112,3 +112,49 @@ button {
   }
 }
 
+.modes {
+  .modes-mode {
+    background: $toolbar-modes-mode-background;
+    border-top: $toolbar-modes-mode-border;
+    border-left: $toolbar-modes-mode-border;
+    border-bottom: $toolbar-modes-mode-border;
+    color: $toolbar-modes-mode-color;
+    padding: $toolbar-modes-mode-padding;
+    &:before {
+      color: $toolbar-modes-mode-color;
+    }
+    &:last-child {
+      border-right: $toolbar-modes-mode-border;
+      &.active {
+        border-right: $toolbar-modes-mode-active-border;
+      }
+      &:hover {
+        border-right: $toolbar-modes-mode-hover-border;
+      }
+    }
+
+    &.active {
+      background: $toolbar-modes-mode-active-background;
+      border-left: $toolbar-modes-mode-active-border;
+      border-top: $toolbar-modes-mode-active-border;
+      border-bottom: $toolbar-modes-mode-active-border;
+      color: $toolbar-modes-mode-active-color;
+      padding: $toolbar-modes-mode-active-padding;
+      &:before {
+        color: $toolbar-modes-mode-active-color;
+      }
+    }
+
+    &:hover {
+      background: $toolbar-modes-mode-hover-background;
+      border-left: $toolbar-modes-mode-hover-border;
+      border-top: $toolbar-modes-mode-hover-border;
+      border-bottom: $toolbar-modes-mode-hover-border;
+      color: $toolbar-modes-mode-hover-color;
+      padding: $toolbar-modes-mode-hover-padding;
+      &:before {
+        color: $toolbar-modes-mode-hover-color;
+      }
+    }
+  }
+}

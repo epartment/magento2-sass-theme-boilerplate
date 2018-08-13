@@ -192,22 +192,30 @@ input[type="checkbox"] {
   }
 }
 
-.sorter-options {
-  background-color: $input-sorter-background-color;
-  border: $input-sorter-border;
-  border-radius: $input-sorter-border-radius;
-  height: $input-sorter-height;
-  width: $input-sorter-width;
-  margin: $input-sorter-margin;
-  padding: $input-sorter-padding;
-  vertical-align: $input-sorter-vertical-align;
-  font-size: $input-sorter-font-size;
-  color: $input-sorter-color;
-  font-family: $input-sorter-font-family;
-  font-weight: $input-sorter-font-weight;
-  font-style: $input-sorter-font-style;
-  line-height: $input-sorter-line-height;
+.sorter {
+  .sorter-options {
+    background-color: $input-sorter-background-color;
+    border: $input-sorter-border;
+    border-radius: $input-sorter-border-radius;
+    height: $input-sorter-height;
+    width: $input-sorter-width;
+    margin: $input-sorter-margin;
+    padding: $input-sorter-padding;
+    vertical-align: $input-sorter-vertical-align;
+    font-size: $input-sorter-font-size;
+    color: $input-sorter-color;
+    font-family: $input-sorter-font-family;
+    font-weight: $input-sorter-font-weight;
+    font-style: $input-sorter-font-style;
+    line-height: $input-sorter-line-height;
+  }
+  .sorter-action {
+    &:before {
+      line-height: $input-sorter-line-height;
+    }
+  }
 }
+
 
 /****
 ** Sidebar input
