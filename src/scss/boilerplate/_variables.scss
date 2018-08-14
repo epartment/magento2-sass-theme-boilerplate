@@ -525,6 +525,17 @@ $form-fieldset-field-control-float: none !default;
 $form-action-toolbar-margin: 20px 0 !default;
 $form-action-toolbar-padding: 0 !default;
 
+/* Breadcrumbs */
+$breadcrumb-item-font-size: $font-default-font-size !default;
+$breadcrumb-item-line-height: $font-default-font-line-height !default;
+$breadcrumb-item-padding: 5px 5px 0 0 !default;
+$breadcrumb-item-color: $font-default-color !default;
+$breadcrumb-item-font-weight: $font-default-font-weight !default;
+$breadcrumb-item-current-font-weight: $font-default-font-weight !default;
+$breadcrumb-item-current-color: $color-boilerplate-gray !default;
+$breadcrumb-item-chevron-color: $color-boilerplate-gray !default;
+$breadcrumb-item-chevron-line-height: $font-default-font-line-height !default;
+
 /* Toolbar */
 $toolbar-modes-mode-background: $color-boilerplate-light-gray !default;
 $toolbar-modes-mode-border: 1px solid $color-boilerplate-gray !default;
@@ -538,7 +549,6 @@ $toolbar-modes-mode-active-background: $toolbar-modes-mode-background !default;
 $toolbar-modes-mode-active-border: $toolbar-modes-mode-border !default;
 $toolbar-modes-mode-active-color: $toolbar-modes-mode-color !default;
 $toolbar-modes-mode-active-padding: $toolbar-modes-mode-padding !default;
-
 
 /*
  * Tabs

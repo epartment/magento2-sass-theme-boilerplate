@@ -65,3 +65,33 @@
     }
   }
 }
+
+.breadcrumbs {
+  .items {
+    .item {
+      font-size: $breadcrumb-item-font-size;
+      line-height: $breadcrumb-item-line-height;
+      padding: $breadcrumb-item-padding;
+      color: $breadcrumb-item-color;
+      font-weight: $breadcrumb-item-font-weight;
+
+      a {
+        font-size: $breadcrumb-item-font-size;
+        line-height: $breadcrumb-item-line-height;
+        padding: $breadcrumb-item-padding;
+        color: $breadcrumb-item-color;
+        font-weight: $breadcrumb-item-font-weight;
+      }
+      strong {
+        font-weight: $breadcrumb-item-current-font-weight;
+        color: $breadcrumb-item-current-color;
+      }
+
+      &:after {
+        color: $breadcrumb-item-chevron-color;
+        line-height: $breadcrumb-item-chevron-line-height;
+      }
+    }
+  }
+}
+
