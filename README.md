@@ -423,12 +423,20 @@ For example: `$font-default-font-size: 18px;`
 | `$menu-bar-menu-item-font-weight`            | Menu bar item font-weight, accepted value's: 100-800 or a variable containing it.
 | `$menu-bar-menu-item-font-size`              | Menu bar item font-size.
 | `$menu-bar-menu-item-color`                  | Menu bar item text-color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
+| `$menu-bar-menu-item-hover-background`       | Menu bar item hover-state background-color.
 | `$menu-bar-menu-item-hover-color`            | Menu bar item hover-state text-color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
 | `$menu-bar-menu-item-hover-default-border`   | Menu bar item hover-state default border.
 | `$menu-bar-menu-item-hover-border-top`       | Menu bar item hover-state border-top.
 | `$menu-bar-menu-item-hover-border-right`     | Menu bar item hover-state border-right.
 | `$menu-bar-menu-item-hover-border-bottom`    | Menu bar item hover-state border-bottom.
 | `$menu-bar-menu-item-hover-border-left`      | Menu bar item hover-state border-left.
+| `$menu-bar-menu-item-active-background`      | Menu bar item active-state background-color.
+| `$menu-bar-menu-item-active-color`           | Menu bar item active-sate color.
+| `$menu-bar-menu-item-active-default-border`  | Menu bar item active-state default-border.
+| `$menu-bar-menu-item-active-border-top`      | Menu bar item active-sate border-top.
+| `$menu-bar-menu-item-active-border-right`    | Menu bar item active-state border-right.
+| `$menu-bar-menu-item-active-border-bottom`   | Menu bar item active-state border-bottom. 
+| `$menu-bar-menu-item-active-border-left`     | Menu bar item active-state border-left.
 
 ###### Fieldset
 | Variable                                     | Description
@@ -466,6 +474,17 @@ For example: `$font-default-font-size: 18px;`
 | `$form-fieldset-field-label-float`           | Form fieldset label float.
 | `$form-fieldset-field-label-font-weight`     | Form fieldset label font-weight, accepted value's: 100-800 or a variable containing it.
 | `$form-fieldset-field-choice-label-margin`   | Form fieldset choice label margin.
+
+###### Toolbar
+| Variable                                     | Description
+|----------------------------------------------|-------------------------
+| `$toolbar-modes-mode-background`             | Toolbar Mode background.
+| `$toolbar-modes-mode-border`                 | Toolbar Mode border.
+| `$toolbar-modes-mode-color`                  | Toolbar Mode color.
+| `$toolbar-modes-mode-padding`                | Toolbar Mode padding.
+| `$toolbar-modes-mode-hover-background`       | Toolbar Mode hover-state background.
+| `$toolbar-modes-mode-hover-border`           | Toolbar Mode hover-state border.
+| `$toolbar-modes-mode-hover-color`            | Toolbar Mode hover-state color
 
 ###### Detail tab
 | Variable                                     | Description
