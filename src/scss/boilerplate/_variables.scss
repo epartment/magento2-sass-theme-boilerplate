@@ -157,13 +157,14 @@ $button-default-text-transform: none !default;
 /* Button default states */
 $button-default-hover-background-color: $color-boilerplate-orange !default;
 $button-default-hover-border: 1px solid $color-boilerplate-blue !default;
-$button-default-hover-color: white !default;
+$button-default-hover-color: $color-boilerplate-gray !default;
 
 /* Button primary */
 $button-primary-background-color: $button-default-background-color !default;
 $button-primary-border: $button-default-border !default;
 $button-primary-border-radius: $button-default-border-radius;
 $button-primary-color: $button-default-color !default;
+$button-primary-font-family: $button-default-font-family !default;
 $button-primary-font-weight: 600 !default;
 $button-primary-font-size: $button-default-font-size !default;
 $button-primary-transition: $button-default-transition !default;
@@ -178,6 +179,7 @@ $button-primary-hover-color: $button-default-hover-color !default;
 /* Button secondary */
 $button-secondary-background-color: white !default;
 $button-secondary-border: 1px solid blue !default;
+$button-secondary-font-family: $button-default-font-family !default;
 $button-secondary-font-size: $button-default-font-size !default;
 $button-secondary-padding: 20px !default;
 $button-secondary-transition: $button-default-transition !default;

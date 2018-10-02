@@ -18,16 +18,24 @@ button {
   padding: $button-default-padding;
   text-transform: $button-default-text-transform;
 
+  &:hover {
+    color: $button-default-hover-color;
+    border: $button-default-hover-border;
+    background-color: $button-default-hover-background-color;
+  }
+
   &.action {
     &:hover {
       background: $button-default-hover-background-color;
       border: $button-default-hover-border;
+      color: $button-default-hover-color;
     }
     &.primary {
       background: $button-primary-background-color;
       border: $button-primary-border;
       color: $button-primary-color;
       padding: $button-primary-padding;
+      font-family: $button-primary-font-family;
       font-size: $button-primary-font-size;
       text-transform: $button-primary-text-transform;
       font-weight: $button-primary-font-weight;
@@ -70,6 +78,7 @@ button {
     background: $button-primary-background-color;
     border: $button-primary-border;
     color: $button-primary-color;
+    font-family: $button-primary-font-family;
     padding: $button-primary-padding;
     font-size: $button-primary-font-size;
     text-transform: $button-primary-text-transform;
@@ -94,6 +103,7 @@ button {
     background: $button-secondary-background-color;
     border: $button-secondary-border;
     color: $button-secondary-color;
+    font-family: $button-secondary-font-family;
     font-size: $button-secondary-font-size;
 
     &:hover {
