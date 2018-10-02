@@ -459,19 +459,14 @@ $menu-bar-menu-item-font-size: $font-default-font-size !default;
 $menu-bar-menu-item-color: $color-boilerplate-gray !default;
 
 $menu-bar-menu-item-hover-color: $color-boilerplate-black !default;
-$menu-bar-menu-item-hover-default-border: 3px solid $color-boilerplate-orange !default;
-$menu-bar-menu-item-hover-border-top: none !default;
-$menu-bar-menu-item-hover-border-bottom: $menu-bar-menu-item-hover-default-border !default;
-$menu-bar-menu-item-hover-border-left: none !default;
-$menu-bar-menu-item-hover-border-right: none !default;
 $menu-bar-menu-item-hover-background: $menu-bar-background !default;
 
 $menu-bar-menu-item-active-color: $menu-bar-menu-item-hover-color !default;
-$menu-bar-menu-item-active-default-border: $menu-bar-menu-item-hover-default-border !default;
-$menu-bar-menu-item-active-border-top: $menu-bar-menu-item-hover-border-top !default;
-$menu-bar-menu-item-active-border-bottom: $menu-bar-menu-item-hover-border-bottom !default;
-$menu-bar-menu-item-active-border-left: $menu-bar-menu-item-hover-border-left !default;
-$menu-bar-menu-item-active-border-right: $menu-bar-menu-item-hover-border-right !default;
+$menu-bar-menu-item-active-default-border: 3px solid $color-boilerplate-orange !default
+$menu-bar-menu-item-active-border-top: none !default;
+$menu-bar-menu-item-active-border-bottom: $menu-bar-menu-item-hover-default-border !default;
+$menu-bar-menu-item-active-border-left: none !default;
+$menu-bar-menu-item-active-border-right: none !default;
 $menu-bar-menu-item-active-background: $menu-bar-menu-item-hover-background !default;
 
 $menu-bar-menu-item-submenu-background: #ffffff !default;
