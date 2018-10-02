@@ -521,5 +521,5 @@ For example: `$font-default-font-size: 18px;`
 ##### Available Gulp commands
 - `gulp watch` : Watches all `.scss` files and compiles them when `gulp` detects a change. It also starts a browsersync session this way you can see your changes on the fly.
 - `gulp scripts` : Compiles all `.js` files.
-- `gulp script-depts` : Copies the script dependencies from the `node_modules` to a local folder for `production`
+- `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
 - `gulp build` : Builds all `.scss` and `.js` files for `production`
