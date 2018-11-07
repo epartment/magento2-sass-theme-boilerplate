@@ -69,9 +69,16 @@ If you want to know more about this project, join our slack channel and ask ques
 2. Create a new `.scss` file e.g. `_custom_hero_homepage.scss`.
 3. Write some awesome `SASS`.
 4. Note: Don't forget to include the new `.scss` created before as a `@import` in the `style.scss`.
-5. Run a `gulp` command to compile the styling changes. More info about the `gulp` commands can be found in the next chapter. 
+5. Run a `gulp` command to compile the styling changes. More info about the `gulp` commands can be found in the next chapter.
 
-##### Variables
+### Gulp
+##### Available Gulp commands
+- `gulp watch` : Watches all `.scss` files and compiles them when `gulp` detects a change. It also starts a browsersync session this way you can see your changes on the fly.
+- `gulp scripts` : Compiles all `.js` files.
+- `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
+- `gulp build` : Builds all `.scss` and `.js` files for `production`
+
+### Variables
 These are the default variables that can be overwritten by creating a custom `SASS` file. You can simply target the variable again and overrule the default value.
 For example: `$font-default-font-size: 18px;`
 
@@ -525,12 +532,6 @@ For example: `$font-default-font-size: 18px;`
 | `$footer-content-color`                      | Footer content text-color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
 | `$footer-line-color`                         | Footer line color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
 
-### Gulp
-##### Available Gulp commands
-- `gulp watch` : Watches all `.scss` files and compiles them when `gulp` detects a change. It also starts a browsersync session this way you can see your changes on the fly.
-- `gulp scripts` : Compiles all `.js` files.
-- `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
-- `gulp build` : Builds all `.scss` and `.js` files for `production`
 
 ## Demo images
 ![Lister page](demo-listerpage.png)
