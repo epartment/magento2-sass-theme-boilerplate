@@ -53,6 +53,8 @@ If you want to know more about this project, join our slack channel and ask ques
 5. Go back to the Frontend en reload the page.
 6. You have succesfully installed the Epartment Magento 2 Boilerplate.
 
+---
+
 ### Extending and editing the boilerplate styling
 > **Note**: The Epartment Magento 2 Boilerplate uses SASS for styling.
 
@@ -78,10 +80,11 @@ If you want to know more about this project, join our slack channel and ask ques
 - `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
 - `gulp build` : Builds all `.scss` and `.js` files for `production`
 
+---
+
 ### Variables
 These are the default variables that can be overwritten by creating a custom `SASS` file. You can simply target the variable again and overrule the default value.
 For example: `$font-default-font-size: 18px;`
-
 
 ###### Colors
 | Variable                                     | Description 
@@ -532,6 +535,7 @@ For example: `$font-default-font-size: 18px;`
 | `$footer-content-color`                      | Footer content text-color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
 | `$footer-line-color`                         | Footer line color, accepted formats: HEX, RGB, RGBA or a variable containing one of these.
 
+---
 
 ## Demo images
 ![Lister page](demo-listerpage.png)
