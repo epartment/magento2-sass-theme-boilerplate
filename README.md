@@ -1,5 +1,13 @@
-# Magento 2 Boilerplate by Epartment
-Magento 2 Boilerplate Theme with focus on ease-of-use and quick results
+# Magento 2 SASS boilerplate theme
+A Magento 2, **SASS** based boilerplate theme with focus on ease-of-use and quick results. The boilerplate variables cover a great range of elements, so that any design is quickly implemented with the propper classes inherits and re-use of the standard Magento Blank theme objects.
+
+A Demo will be available soon! This Magento 2 SASS theme is developed by [Epartment E-commerce](https://www.epartment.nl/).
+
+![Listerpage](demo-listerpage.png)
+
+[More images](https://github.com/epartment/magento2-theme-epartment-boilerplate#user-content-demo-images).
+
+---
 
 ### Compatibility
 * Magento 2.2
@@ -21,7 +29,7 @@ If you want to know more about this project, join our slack channel and ask ques
 > <strong>Note</strong>: You only need one package manager, so either yarn or npm.
 
 ### Installation
-> <strong>Disclaimer</strong>:
+> **Disclaimer**:
 > This installation guide expects you to have a Magento 2 instance running. If you need help to get Magento 2 up and running, we'd like to refer you to the install guide: https://devdocs.magento.com/guides/v2.2/install-gde/prereq/zip_install.html
 
 ##### Creating the right folder structure
@@ -46,7 +54,7 @@ If you want to know more about this project, join our slack channel and ask ques
 6. You have succesfully installed the Epartment Magento 2 Boilerplate.
 
 ### Extending and editing the boilerplate styling
-> <strong>Note</strong>: The Epartment Magento 2 Boilerplate uses SASS for styling.
+> **Note**: The Epartment Magento 2 Boilerplate uses SASS for styling.
 
 ##### Editing existing variables
 1. In your project navigate to the `app/design/frontend/Epartment/bootstrap/src/scss/boilerplate` folder.
@@ -55,7 +63,7 @@ If you want to know more about this project, join our slack channel and ask ques
 4. Run a `gulp` command to compile the styling changes. More info about the `gulp` commands can be found in the next chapter. 
 
 ##### Extending with custom styling
-> <strong>Note</strong>: The boilerplate variables cover a great range of elements. Try to modify the variables first before adding any custom `.scss` files!
+> **Note**: The boilerplate variables cover a great range of elements. Try to modify the variables first before adding any custom `.scss` files!
 
 1. In your project navigate to the `app/design/frontend/Epartment/bootstrap/src/scss` folder.
 2. Create a new `.scss` file e.g. `_custom_hero_homepage.scss`.
@@ -523,3 +531,11 @@ For example: `$font-default-font-size: 18px;`
 - `gulp scripts` : Compiles all `.js` files.
 - `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
 - `gulp build` : Builds all `.scss` and `.js` files for `production`
+
+## Demo images
+![Lister page](demo-listerpage.png)
+![Product page](demo-productpage.png)
+![Shoppingcart](demo-shoppingcart.png)
+![Admin - themes](demo-admin.png)
+
+
