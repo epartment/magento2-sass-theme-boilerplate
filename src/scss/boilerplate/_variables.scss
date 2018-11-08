@@ -21,6 +21,17 @@ $color-boilerplate-gray: rgb(148, 148, 148) !default;
 $color-primary-gradient-color: linear-gradient(red, orange) !default;
 $color-secondary-gradient-color: linear-gradient(magenta, blue) !default;
 
+
+/*
+ * Responsive breakpoints
+ */
+$breakpoint-mobile-small: $screen__xxs !default;
+$breakpoint-mobile-portrait: $screen__xs !default;
+$breakpoint-mobile-landscape: $screen__s !default;
+$breakpoint-tablet-portrait: $screen__m !default;
+$breakpoint-tablet-landscape: $screen__l !default;
+$breakpoint-desktop: $screen__xl !default;
+
 /*
  * Fonts
  */
@@ -148,6 +159,7 @@ $button-default-border: 1px solid $color-boilerplate-blue !default;
 $button-default-border-radius: 3px !default;
 $button-default-color: $color-boilerplate-light-gray !default;
 $button-default-font-family: $font-default-font-family-primary !default;
+$button-default-line-height: $font-default-font-line-height;
 $button-default-font-size: 1.4rem !default;
 $button-default-font-weight: 400 !default;
 $button-default-transition: all .34s ease-in-out !default;
@@ -157,14 +169,15 @@ $button-default-text-transform: none !default;
 /* Button default states */
 $button-default-hover-background-color: $color-boilerplate-orange !default;
 $button-default-hover-border: 1px solid $color-boilerplate-blue !default;
-$button-default-hover-color: $color-boilerplate-gray !default;
+$button-default-hover-color: white !default;
 
 /* Button primary */
 $button-primary-background-color: $button-default-background-color !default;
 $button-primary-border: $button-default-border !default;
 $button-primary-border-radius: $button-default-border-radius;
 $button-primary-color: $button-default-color !default;
-$button-primary-font-family: $button-default-font-family !default;
+$button-primary-font-family: $font-default-font-family-primary !default;
+$button-primary-line-height: $font-default-font-line-height;
 $button-primary-font-weight: 600 !default;
 $button-primary-font-size: $button-default-font-size !default;
 $button-primary-transition: $button-default-transition !default;
