@@ -13,10 +13,21 @@ var npmDependencies = {
 };
 
 var config = {
-
     browserSyncProxy: 'magento2-boilerplate.test'
-
 };
+
+gulp.task('watch', function() {
+    browserSync.init({
+        proxy: {
+            target: config.browserSyncProxy
+        },
+        "rewriteRules": [
+            {
+                "match": "." + config.browserSyncProxy,
+                "replace": ""
+            }
+        ]
+    });
 
 gulp.task('watch', function() {
     browserSync.init({
