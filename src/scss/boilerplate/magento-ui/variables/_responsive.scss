@@ -11,3 +11,14 @@ $screen__s   : 640px !default;
 $screen__m   : 768px !default;
 $screen__l   : 1024px !default;
 $screen__xl  : 1440px !default;
+
+$screen__xxs_min : $screen__xxs;
+$screen__xxs_max : $screen__xs - 1;
+$screen__xs_min  : $screen__xs;
+$screen__xs_max  : $screen__s - 1;
+$screen__s_min   : $screen__s;
+$screen__s_max   : $screen__m - 1;
+$screen__m_min   : $screen__m;
+$screen__m_max   : $screen__l - 1;
+$screen__l_min   : $screen__l;
+$screen__l_max   : $screen__xl - 1;
