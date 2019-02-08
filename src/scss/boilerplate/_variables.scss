@@ -200,9 +200,9 @@ $button-secondary-color: $color-boilerplate-blue !default;
 $button-secondary-text-transform: $button-default-text-transform !default;
 
 /* Button secondary hover states */
-$button-secondary-hover-background-color: black !default;
-$button-secondary-hover-border: red !default;
-$button-secondary-hover-color: red !default;
+$button-secondary-hover-background-color: #dadada !default;
+$button-secondary-hover-border: 1px solid #2a2a2a !default;
+$button-secondary-hover-color: #000 !default;
 
 /*
  * Swatches
