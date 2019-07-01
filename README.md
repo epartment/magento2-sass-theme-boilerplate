@@ -16,35 +16,35 @@ A Demo will be available soon! This Magento 2 SASS theme is developed by [Epart
 * Magento 2.0
 
 ### Bug reports and contribution rules
-- Before reporting an issue, check if you can reproduce it on the clean Magento instance without our boilerplate. If that's true, submit issue to the Magento 2 repository, not here
+- Before reporting an issue, check if you can reproduce it on a clean Magento instance without our boilerplate. If that is the case, please submit the issue to the Magento 2 repository, not here
 - All other issues can be reported here
 
 ### Questions
-If you want to know more about this project, join our slack channel and ask questions.
+If you want to know more about this project, join our slack channel and ask us any question you have.
 
 ### Requirements
 - Node.js (https://nodejs.org/)
-- npm (https://npmjs.org) 
+- npm (https://npmjs.org)
 - yarn (https://yarnpkg.com/)
 
 > <strong>Note</strong>: You only need one package manager, so either yarn or npm.
 
 ### Installation
 > **Disclaimer**:
-> This installation guide expects you to have a Magento 2 instance running. If you need help to get Magento 2 up and running, we'd like to refer you to the install guide: https://devdocs.magento.com/guides/v2.2/install-gde/prereq/zip_install.html
+> This installation guide expects you to have a Magento 2 instance running. If you need help to get Magento 2 up and running, we'd like to refer you to the install guide: https://devdocs.magento.com/guides/v2.3/install-gde/prereq/zip_install.html
 
 ##### Creating the right folder structure
 1. Open the Magento 2 project where you want to install the boilerplate in your IDE/Code editor of choice.
 2. Navigate to the `app/design/frontend` folder.
 3. Create a new directory named `Epartment`.
-4. Open your terminal/commandline.
+4. Open your terminal.
 5. `cd` into `app/design/frontend/Epartment`.
-6. Clone the git repository in a new directory called `bootstrap` note the lowercase.<br/> 
+6. Clone the git repository in a new directory called `bootstrap` (note the lowercase).<br/> 
 `git clone https://github.com/epartment/magento2-theme-epartment-boilerplate.git bootstrap`.
 
 ##### Installing the required dependencies using npm or yarn
-1. In your terminal/commandline: `cd` into the newly created `app/design/frontend/Epartment/bootstrap` folder.
-2. Run the following command: `yarn install`. Alternatively it's also possible to do `npm install`. 
+1. In your terminal: `cd` into the newly created `app/design/frontend/Epartment/bootstrap` folder.
+2. Run the following command: `yarn install` or when using npm: `npm install`. 
 
 ##### Setting the boilerplate as the active theme in the Magento 2 backend
 1. Login to your Magento 2 backend.
@@ -61,9 +61,9 @@ If you want to know more about this project, join our slack channel and ask ques
 
 ##### Editing existing variables
 1. In your project navigate to the `app/design/frontend/Epartment/bootstrap/src/scss/boilerplate` folder.
-2. You can take a look into the variables chapter of this README to get a full list of variables you can target.
-3. Overwriting the default variables is done by creating a new `.scss` file e.g. `_websitename.scss` in the `scss/boilerplate` folder, adding the `.scss` as an `@import` in `style.scss`. Make sure the `@import` is above the boilerplate import or the value's will not be redeclared. And finally in the newly created file, redeclare the variables you want to overwrite.
-4. Run a `gulp` command to compile the styling changes. More info about the `gulp` commands can be found in the next chapter. 
+2. You can take a look at the variables chapter of this README to get a full list of variables you can target.
+3. Overwriting the default variables is done by creating a new `.scss` file e.g. `_websitename.scss` in the `scss/boilerplate` folder, adding the `.scss` as an `@import` in `style.scss`. Make sure the `@import` is **above** the boilerplate import or the values will not be redeclared. In the newly created file, redeclare the variables you want to overwrite.
+4. Run a `gulp` command to compile the styling changes. More info about the `gulp` commands can be found in the next chapter.
 
 ##### Extending with custom styling
 > **Note**: The boilerplate variables cover a great range of elements. Try to modify the variables first before adding any custom `.scss` files!
@@ -76,7 +76,7 @@ If you want to know more about this project, join our slack channel and ask ques
 
 ### Gulp
 ##### Available Gulp commands
-- `gulp watch` : Watches all `.scss` files and compiles them when `gulp` detects a change. It also starts a browsersync session this way you can see your changes on the fly.
+- `gulp watch` : Watches all `.scss` files and compiles them when `gulp` detects a change. It starts a browsersync session to the `browserSyncProxy` set in the `Gulpfile.js`. This way you can see your changes on the fly.
 - `gulp scripts` : Compiles all `.js` files.
 - `gulp script-deps` : Copies the script dependencies from the `node_modules` to a local folder for `production`
 - `gulp build` : Builds all `.scss` and `.js` files for `production`
