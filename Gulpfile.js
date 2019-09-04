@@ -1,6 +1,7 @@
 var gulp        = require('gulp');
 var plumber     = require('gulp-plumber');
 var concat      = require('gulp-concat');
+var merge       = require('merge-stream');
 var sass        = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
@@ -32,22 +33,26 @@ gulp.task('watch', function() {
     });
 
     gulp.watch("src/scss/**/*.scss", gulp.series('sass'));
-    gulp.watch(scripts, gulp.series('scripts', 'reload-js'));
+    gulp.watch(scripts, gulp.series('scripts'));
     gulp.watch("**/*.phtml").on('change', browserSync.reload);
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(scripts)
-        .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('web/js'));
+    var stream = gulp.src(scripts)
+        .pipe(concat('scripts.js'));
+    return stream
+        .pipe(gulp.dest('web/js'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('script-deps', function() {
-
-    for (var src in npmDependencies) {
-        gulp.src(src)
-            .pipe(gulp.dest('web/js/deps/' + npmDependencies[src]));
-    }
+    return new Promise(function (resolve) {
+        for (var src in npmDependencies) {
+            gulp.src(src)
+                .pipe(gulp.dest('web/js/deps/' + npmDependencies[src]));
+        }
+        resolve();
+    })
 });
 
 gulp.task('reload-js', function() {
@@ -55,13 +60,23 @@ gulp.task('reload-js', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src("src/scss/style.scss")
+    var sassStream,
+        cssStream;
+    sassStream = gulp.src("src/scss/style.scss")
+        .pipe(sass({
+            errLogToConsole: true
+        }));
+    cssStream = gulp.src('node_modules/line-awesome/dist/css/line-awesome.css');
+    return merge(sassStream, cssStream)
         .pipe(plumber())
-        .pipe(sass())
-        .pipe(gulp.dest("web/css"))
+        .pipe(gulp.dest('web/css'))
         .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('sass', 'script-deps', 'scripts'));
+gulp.task('copy-fonts', function() {
+    return gulp.src('node_modules/line-awesome/dist/fonts/*')
+        .pipe(gulp.dest('web/fonts/'));
+});
+gulp.task('build', gulp.series('copy-fonts', 'sass', 'script-deps', 'scripts'));
 
 gulp.task('default', gulp.series('build'));
