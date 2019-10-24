@@ -1,7 +1,6 @@
 var gulp        = require('gulp');
 var plumber     = require('gulp-plumber');
 var concat      = require('gulp-concat');
-var merge       = require('merge-stream');
 var sass        = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
@@ -60,23 +59,15 @@ gulp.task('reload-js', function() {
 });
 
 gulp.task('sass', function() {
-    var sassStream,
-        cssStream;
-    sassStream = gulp.src("src/scss/style.scss")
+    return gulp.src("src/scss/style.scss")
+        .pipe(plumber())
         .pipe(sass({
             errLogToConsole: true
-        }));
-    cssStream = gulp.src('node_modules/line-awesome/dist/css/line-awesome.css');
-    return merge(sassStream, cssStream)
-        .pipe(plumber())
+        }))
         .pipe(gulp.dest('web/css'))
         .pipe(browserSync.stream());
 });
 
-gulp.task('copy-fonts', function() {
-    return gulp.src('node_modules/line-awesome/dist/fonts/*')
-        .pipe(gulp.dest('web/fonts/'));
-});
-gulp.task('build', gulp.series('copy-fonts', 'sass', 'script-deps', 'scripts'));
+gulp.task('build', gulp.series('sass', 'script-deps', 'scripts'));
 
 gulp.task('default', gulp.series('build'));
