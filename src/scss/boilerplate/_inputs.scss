@@ -229,8 +229,8 @@ input[type="checkbox"] {
     line-height: $input-default-line-height;
     font-size: $input-default-font-size;
     font-weight: $input-default-font-weight;
-    color: #2e2e2e;
-    height: 45px;
+    color: $input-default-color;
+    height: $input-default-height;
   }
 }
 

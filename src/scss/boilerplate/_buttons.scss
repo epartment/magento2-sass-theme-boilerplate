@@ -24,6 +24,12 @@ button {
     background-color: $button-default-hover-background-color;
   }
 
+  &:focus {
+    color: $button-default-hover-color;
+    border: $button-default-hover-border;
+    background-color: $button-default-hover-background-color;
+  }
+
   &.action {
     &:hover {
       background: $button-default-hover-background-color;
@@ -77,11 +83,14 @@ button {
   &.primary {
     background: $button-primary-background-color;
     border: $button-primary-border;
+    border-radius: $button-primary-border-radius;
     color: $button-primary-color;
     font-family: $button-primary-font-family;
     padding: $button-primary-padding;
     font-size: $button-primary-font-size;
+    font-weight: $button-primary-font-weight;
     text-transform: $button-primary-text-transform;
+    transition: $button-primary-transition;
 
     &:hover {
       background: $button-primary-hover-background-color;
