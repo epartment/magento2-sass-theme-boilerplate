@@ -19,11 +19,14 @@ var config = {
 };
 
 gulp.task('watch', function() {
+    var regexProxyHttp = 'http\\\\u003A\\\\u002F\\\\u002F' + config.browserSyncProxy.replace('.', '\.');
     browserSync.init({
-        proxy: {
-            target: config.browserSyncProxy
-        },
+        proxy: config.browserSyncProxy,
         "rewriteRules": [
+            {
+                match: new RegExp(regexProxyHttp, 'g'),
+                fn: () => ''
+            },
             {
                 "match": "." + config.browserSyncProxy,
                 "replace": ""
