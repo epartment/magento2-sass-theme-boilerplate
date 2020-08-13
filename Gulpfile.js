@@ -18,8 +18,22 @@ var config = {
 
 };
 
+function unicodeEscape(str) {
+    for (var result = '', index = 0, charCode; !isNaN(charCode = str.charCodeAt(index));) {
+        var x = str[index];
+        if (x.match(new RegExp('[^a-z0-9,\._]'))) {
+            result += '\\u' + ('0000' + charCode.toString(16)).slice(-4).toUpperCase();
+        } else {
+            result += x;
+        }
+        index++;
+    }
+    return result;
+}
+
 gulp.task('watch', function() {
-    var regexProxyHttp = 'http\\\\u003A\\\\u002F\\\\u002F' + config.browserSyncProxy.replace('.', '\.');
+    var regexProxyHttp = unicodeEscape('http://' + config.browserSyncProxy).replace(new RegExp('\\\\', 'g'), '\\\\');
+    var regexProxy = unicodeEscape(config.browserSyncProxy).replace(new RegExp('\\\\', 'g'), '\\\\');
     browserSync.init({
         proxy: config.browserSyncProxy,
         "rewriteRules": [
@@ -28,12 +42,11 @@ gulp.task('watch', function() {
                 fn: () => ''
             },
             {
-                "match": "." + config.browserSyncProxy,
-                "replace": ""
+                match: new RegExp('\\\.' + regexProxy, 'gi'),
+                fn: () => ''
             }
         ]
     });
-
     gulp.watch("src/scss/**/*.scss", gulp.series('sass'));
     gulp.watch(scripts, gulp.series('scripts'));
     gulp.watch("**/*.phtml").on('change', browserSync.reload);
