@@ -10,6 +10,7 @@ A Demo will be available soon! This Magento 2 SASS theme is developed by [Epart
 ---
 
 ### Compatibility
+* Magento 2.4
 * Magento 2.3
 * Magento 2.2
 * Magento 2.1
