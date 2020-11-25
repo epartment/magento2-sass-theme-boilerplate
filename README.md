@@ -1,7 +1,7 @@
 # Magento 2 SASS boilerplate theme
 A Magento 2, **SASS** based boilerplate theme with focus on ease-of-use and quick results. The boilerplate variables cover a great range of elements, so that any design is quickly implemented with the proper classes inherits and re-use of the standard Magento Blank theme objects.
 
-A Demo will be available soon! This Magento 2 SASS theme is developed by [Epartment E-commerce](https://www.epartment.nl/).
+[A frontend demo is available here](https://m2boilerplate.epartment.nl/). This Magento 2 SASS theme is developed by [Epartment E-commerce](https://www.epartment.nl/).
 
 ![Listerpage](demo-listerpage.png)
 
