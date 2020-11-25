@@ -40,7 +40,7 @@ If you want to know more about this project, join our slack channel and ask us a
 4. Open your terminal.
 5. `cd` into `app/design/frontend/Epartment`.
 6. Clone the git repository in a new directory called `bootstrap` (note the lowercase).<br/> 
-`git clone https://github.com/epartment/magento2-theme-epartment-boilerplate.git bootstrap`.
+`git clone git@github.com:epartment/magento2-sass-theme-boilerplate.git bootstrap`.
 
 ##### Installing the required dependencies using npm or yarn
 1. In your terminal: `cd` into the newly created `app/design/frontend/Epartment/bootstrap` folder.
